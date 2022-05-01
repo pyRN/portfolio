@@ -1,13 +1,134 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width"/>
-        <title>Jacob Mayeux</title>
-        <link href="styles.css" rel="stylesheet" type="text/css"/>
-    </head>
-    <body>
-        <h1>Hello World</h1>
-    </body>
-    <script src="index.js"/>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Jacob Mayeux</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <nav class="navbar">
+        <h2 class="brand">Jacob Mayeux</h2>
+        <div class="links">
+          <a href="#main-section">About</a>
+          <a href="#resume-section">Resume</a>
+          <a href="#projects-section">Projects</a>
+          <a href="#contact-section">Contact</a>
+        </div>
+      </nav>
+
+    <main class="card" id="main-section">
+      <div class="row">
+        <img src="./media/Jacob.jpg"/>
+        <div class="column">
+          <h1>About Me</h1>
+          <article>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+          </article>
+          <button>Contact Me</button>
+        </div>
+        </div>
+    </main>
+    <section class="card" is="resume-section">
+      <div class="resume-header">
+        <h2>Resume</h2>
+        <button>Download</button>
+      </div>
+
+      <article>
+        <h3>Education</h3>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </article>
+      <article>
+        <h3>Work Experience</h3>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </article>
+      <article>
+        <h3>Skills</h3>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </article>
+    </section>
+    <section class="card" id="projects-section">
+      <h2>Projects</h2>
+      <div class="row flex-wrap">
+        <div class="project">
+          <h3>Project #1</h3>
+          <div class="project-preview">
+            Image goes here
+          </div>
+          <div class="row">SVGs go here</div>
+        </div>
+        <div class="project">
+          <h3>Project #2</h3>
+          <div class="project-preview">
+            Image goes here
+          </div>
+          <div class="row">SVGs go here</div>
+        </div>
+        <div class="project">
+          <h3>Project #3</h3>
+          <div class="project-preview">
+            Image goes here
+          </div>
+          <div class="row">SVGs go here</div>
+        </div>
+        <div class="project">
+          <h3>Project #4</h3>
+          <div class="project-preview">
+            Image goes here
+          </div>
+          <div class="row">SVGs go here</div>
+        </div>
+      </div>
+    </section>
+    <section class="card" id="contact-section">
+      <h2>Contact Me</h2>
+      <form>
+        <div class="column">
+          <label for="contacts-name">Name:</label>
+          <input placeholder="Full Name" id="contacts-name" />
+        </div>
+        <div class="column">
+          <label for="contacts-message">Message:</label>
+          <textarea id="contacts-message" placeholder="Type Message"></textarea>
+        </div>
+
+        <button>Contact Me</button>
+      </form>
+    </section>
+    <footer></footer>
+  </body>
+  <script src="index.js" />
 </html>

@@ -1,0 +1,104 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+main, section{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.navbar{
+    background-color: #3333f3;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;  
+    padding: 10px 20% 10px 20%;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.brand{
+    color: white;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    border: 1px solid #3333f3;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.resume-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    border-radius: 7px;
+    background-color: #3333f3;
+    color: white;
+}
+
+button:hover{
+    background-color: white;
+    border:1px solid #3333f3;
+    color: #3333f3;
+}
+
+.card{
+    border: solid 1px black;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 20% 0 20%;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 5%;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.project-preview{
+    border: 1px solid #3333f3;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px
+}
