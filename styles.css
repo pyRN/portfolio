@@ -1,129 +1,213 @@
-html, body{
-    margin: 0;
-    padding: 0;
+:root {
+  --primary-color: rgb(51, 51, 243);
 }
 
-main, section{
-    margin-left: 20%;
-    margin-right: 20%;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.navbar{
-    background-color: #3333f3;
-    display:flex;
-    flex-direction:row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;  
-    padding: 10px 20% 10px 20%;
-    height: 50px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+main,
+section {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-hamburger-menu{
+/* Navbar styles */
+.brand {
+  color: white;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 10px 10% 10px 10%;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  display: none;
+  margin: auto 0;
+}
+
+.hamburger-menu div {
+  background-color: white;
+  height: 3px;
+  margin: 6px 0;
+  transition: 0.3s;
+  width: 35px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.open .hamburger-bar-1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .hamburger-bar-2 {
+  opacity: 0;
+}
+
+.open .hamburger-bar-3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  height: calc(100vh - 50px);
+  left: 0;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* End Navbar styles */
+
+img {
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.resume-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  border-radius: 7px;
+  background-color: var(--primary-color);
+  color: white;
+  height: 35px;
+  width: 100px;
+}
+
+button:hover {
+  background-color: white;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.card {
+  border: solid 1px var(--primary-color);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 10% 0 10%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.center-content {
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 5%;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.school-content {
+  margin: 0 0 15px 5px;
+}
+
+.school-header {
+  margin: 0;
+}
+
+.project-preview {
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  width: 150px;
+  height: 150px;
+}
+
+@media only screen and (max-width: 500px) {
+  /* Navbar styles */
+  .hamburger-menu {
+    display: block;
+  }
+
+  .nav-links {
     display: none;
-}
+  }
 
-.brand{
-    color: white;
-}
-
-.links{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 50%;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-}
-
-img{
-    border: 1px solid #3333f3;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-}
-
-.resume-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  .open .mobile-menu {
     align-items: center;
-}
-
-button{
-    border-radius: 7px;
-    background-color: #3333f3;
-    color: white;
-    height: 35px;
-    width: 100px;
-}
-
-button:hover{
-    background-color: white;
-    border:1px solid #3333f3;
-    color: #3333f3;
-}
-
-.card{
-    border: solid 1px #3333f3;
-    border-radius: 8px;
-    padding: 10px;
-    margin: 10px 20% 0 20%;
-}
-
-.row{
-    display: flex;
-    flex-direction: row;
-}
-
-.column{
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
-}
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100vw;
+  }
 
-.center-content{
-    justify-content: center;
-    align-items: center;
-}
+  .links {
+    display: none;
+  }
 
-.project{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px black;
-    border-radius: 8px;
-    margin: 10px;
-    padding: 5%;
-}
+  /* End Navbar styles */
 
-.flex-wrap{
-    flex-wrap: wrap;
-}
-
-.school-content{
-    margin: 0 0 15px 5px;
-}
-
-.school-header{
+  main,
+  section {
     margin: 0;
-}
+  }
 
-.project-preview{
-    border: 1px solid #3333f3;
-    border-radius: 8px;
-    width: 150px;
-    height: 150px
-}
+  .card {
+    margin: 5px;
+  }
 
-@media (min-size: 300px){
-    .hamburger-menu{
-        display: visible;
-    }
+  img {
+    display: none;
+  }
 }
