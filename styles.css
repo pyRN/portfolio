@@ -22,6 +22,10 @@ main, section{
     z-index: 1;
 }
 
+hamburger-menu{
+    display: none;
+}
+
 .brand{
     color: white;
 }
@@ -56,6 +60,8 @@ button{
     border-radius: 7px;
     background-color: #3333f3;
     color: white;
+    height: 35px;
+    width: 100px;
 }
 
 button:hover{
@@ -65,7 +71,7 @@ button:hover{
 }
 
 .card{
-    border: solid 1px black;
+    border: solid 1px #3333f3;
     border-radius: 8px;
     padding: 10px;
     margin: 10px 20% 0 20%;
@@ -79,6 +85,11 @@ button:hover{
 .column{
     display: flex;
     flex-direction: column;
+}
+
+.center-content{
+    justify-content: center;
+    align-items: center;
 }
 
 .project{
@@ -96,9 +107,23 @@ button:hover{
     flex-wrap: wrap;
 }
 
+.school-content{
+    margin: 0 0 15px 5px;
+}
+
+.school-header{
+    margin: 0;
+}
+
 .project-preview{
     border: 1px solid #3333f3;
     border-radius: 8px;
     width: 150px;
     height: 150px
+}
+
+@media (min-size: 300px){
+    .hamburger-menu{
+        display: visible;
+    }
 }
