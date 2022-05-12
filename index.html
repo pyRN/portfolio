@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>Jacob Mayeux</title>
     <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="navbarStyles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <nav class="navbar">
@@ -15,8 +16,7 @@
         <a href="#projects-section" class="menu-link">Projects</a>
         <a href="#contact-section" class="menu-link">Contact</a>
       </div>
-      <div class="hamburger-menu" id="hamburgerMenu" onclick="openMenu(this)">
-        <!-- <input type="checkbox" id="toggler" /> -->
+      <div class="hamburger-menu" id="hamburgerMenu" onclick="fnOpenMenu(this)">
         <div class="hamburger-bar-1"></div>
         <div class="hamburger-bar-2"></div>
         <div class="hamburger-bar-3"></div>
@@ -30,21 +30,14 @@
     </nav>
 
     <main class="card" id="main-section">
-      <div class="row center-content">
-        <div class="column">
-          <img src="./media/Avatar.jpg" />
-        </div>
-        <div class="columnS">
-          <h1>About Me</h1>
+      <div class="row">
+        <img src="./media/Avatar.jpg" alt="Image of me" id="avatar-img" />
+        <div id="main-content">
+          <h2>About Me</h2>
           <article>
             <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
+              My name is Jacob, I am both a registered nurse and web devoloper.
+              I have experience with saving lives and killing bugs.
             </p>
           </article>
           <button>Contact Me</button>
@@ -54,9 +47,101 @@
     <section class="card" is="resume-section">
       <div class="resume-header">
         <h2>Resume</h2>
-        <button>Download</button>
+        <button onclick="window.open('./media/Jacob_Mayeux_2022_Resume.pdf')">
+          Download
+        </button>
       </div>
 
+      <article>
+        <h3>Work Experience</h3>
+        <h4>Software Developer / SAP Technical Specialist [IBM]</h4>
+        <h5>December 2018 - July 2020</h5>
+        <ul>
+          <li>SAP UI5 developer and consultant</li>
+          <li>
+            Created custom web applications in SAP Fiori for companies using
+            SAPs UI5 framework which is wrapped around JS (ES6), HTML5, CSS3,
+            XML and oData RESTful APIs.
+          </li>
+          <li>
+            Worked in an Agile atmosphere with a global team to efficiently
+            create evolving applications.
+          </li>
+          <li>
+            Consulted with business project owners to change application
+            mechanics and design for an easier UI and efficient programming
+            experience.
+          </li>
+          <li>
+            Worked as a system administrator to set up Fiori environments on
+            servers, add users, setup security privileges and assign user roles.
+          </li>
+          <li>Troubleshooting Fiori applications</li>
+        </ul>
+
+        <h4>Nursing</h4>
+        <h5>May 2009 - May 2014 [LPN - Nursing Home, Med/Surg, Home Health]</h5>
+        <h5>May 2014 - February 2019 [RN - Emergency Room]</h5>
+        <h5>July 2020 - Current[RN - Emergency Room]</h5>
+        <ul>
+          <li>
+            Charge Nurse - Responsible for logistics of patients and staff
+            within the Emergency room, staffing, patient liaison and staff
+            advocate.
+          </li>
+          <li>
+            Triaging , assessing, treating and educating patients on their
+            disease process
+          </li>
+          <li>
+            Critical thinking in emergent/trauma situations to treat patients
+            correctly and effectively
+          </li>
+          <li>
+            Communicating with various medical teams to ensure medical treatment
+            for the patient
+          </li>
+        </ul>
+      </article>
+      <article>
+        <h3>Certifications</h3>
+        <ul>
+          <li>Advanced Cardiovascular Life Support (ACLS): 2022</li>
+          <li>Basic Life Support (BLS): 2022</li>
+          <li>Pediatric Advanced Life Support (PALS): 2022</li>
+          <li>Trauma Nursing Core Course (TNCC): 2025</li>
+          <li>Epic Super User Assignment: 2016</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Awards</h3>
+        <ul>
+          <li>Advanced Cardiovascular Life Support (ACLS): 2022</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Skills</h3>
+        <ul>
+          <li>
+            Programming: Javascript ES6/ES7, HTML5, CSS3, jQuery, oData, XML,
+            Python, C++, Java
+          </li>
+          <li>
+            Frameworks: React.js, Node.js, Flask.py, Redux.js, Bootstrap 5, UI5
+          </li>
+          <li>EMRs: Epic, Cerner, Paragon (McKesson) and Allscripts</li>
+          <li>Database: MongoDB, sqlite3, PostgreSQL, Firebase/Firestore</li>
+          <li>
+            Software: Git, Jira, SAP, SAP web IDE and cloud platform, Visual
+            Studio Code, Pycharm, Eclipse, Skype and Microsoft 365 (Azure,
+            Teams, Outlook),
+          </li>
+          <li>
+            Management: Agile software development methodology and Design
+            Thinking
+          </li>
+        </ul>
+      </article>
       <article>
         <h3>Education</h3>
         <div class="column school-content">
@@ -82,74 +167,59 @@
           <h5 class="school-header">High School Diploma</h5>
         </div>
       </article>
-      <article>
-        <h3>Work Experience</h3>
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum."
-        </p>
-      </article>
-      <article>
-        <h3>Skills</h3>
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum."
-        </p>
-      </article>
     </section>
     <section class="card" id="projects-section">
       <h2>Projects</h2>
       <div class="row flex-wrap">
         <div class="project">
-          <h3>Project #1</h3>
-          <div class="project-preview">Image goes here</div>
+          <h3>Do I Have That Card</h3>
+          <img
+            src="https://via.placeholder.com/150x150"
+            alt="Do I Have That Card Screenshot"
+          />
           <div class="row">SVGs go here</div>
         </div>
         <div class="project">
-          <h3>Project #2</h3>
-          <div class="project-preview">Image goes here</div>
+          <h3>Rapid Response</h3>
+          <img
+            src="https://via.placeholder.com/150x150"
+            alt="Rapid Respons Screenshot"
+          />
           <div class="row">SVGs go here</div>
         </div>
         <div class="project">
-          <h3>Project #3</h3>
-          <div class="project-preview">Image goes here</div>
-          <div class="row">SVGs go here</div>
-        </div>
-        <div class="project">
-          <h3>Project #4</h3>
-          <div class="project-preview">Image goes here</div>
+          <h3>Tartaros</h3>
+          <img
+            src="https://via.placeholder.com/150x150"
+            alt="Tartaros Screenshot"
+          />
           <div class="row">SVGs go here</div>
         </div>
       </div>
     </section>
     <section class="card" id="contact-section">
-      <h2>Contact Me</h2>
       <div class="row">
-        <img src="./media/Contact Me.jpg" alt="Contact me image" />
+        <img
+          src="./media/Contact Me.jpg"
+          alt="Contact me image"
+          id="contact-me-img"
+        />
         <form>
+          <h2>Contact Me</h2>
           <div class="column">
             <label for="contacts-name">Name:</label>
-            <input placeholder="Full Name" id="contacts-name" />
+            <input placeholder="Full Name" id="contacts-name" required />
           </div>
           <div class="column">
             <label for="contacts-message">Message:</label>
             <textarea
               id="contacts-message"
               placeholder="Type Message"
+              required
             ></textarea>
           </div>
 
-          <button>Contact Me</button>
+          <button disabled>Contact Me</button>
         </form>
       </div>
     </section>
