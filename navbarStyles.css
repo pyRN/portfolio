@@ -68,13 +68,13 @@
   padding: 0;
 }
 
-a {
+.menu-link {
   text-decoration: none;
   color: var(--primary-text-color);
   font-size: 15pt;
 }
 
-a:hover {
+.menu-link:hover {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
   text-decoration: underline;

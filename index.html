@@ -9,7 +9,7 @@
   </head>
   <body>
     <nav class="navbar">
-      <h2 class="brand">Jacob Mayeux</h2>
+      <h1 class="brand">Jacob Mayeux</h1>
       <div class="links">
         <a href="#main-section" class="menu-link">About</a>
         <a href="#resume-section" class="menu-link">Resume</a>
@@ -31,23 +31,33 @@
 
     <main class="card" id="main-section">
       <div class="row">
-        <img src="./media/Avatar.jpg" alt="Image of me" id="avatar-img" />
+        <img
+          src="./media/images/Avatar.jpg"
+          alt="Image of me"
+          id="avatar-img"
+        />
         <div id="main-content">
           <h2>About Me</h2>
           <article>
             <p>
-              My name is Jacob, I am both a registered nurse and web devoloper.
-              I have experience with saving lives and killing bugs.
+              My name is Jacob, I am a registered nurse and web devoloper. I
+              have experience with saving lives and fixing bugs. I have worked
+              on multiple frontend projects while helping with backend decision
+              making. I am self sufficient with great critical thinking skills
+              that I learn while working as a nurse in the emergency room.
             </p>
           </article>
-          <button>Contact Me</button>
+          <button onclick="fnContactMe()">Contact Me</button>
         </div>
       </div>
     </main>
     <section class="card" is="resume-section">
       <div class="resume-header">
         <h2>Resume</h2>
-        <button onclick="window.open('./media/Jacob_Mayeux_2022_Resume.pdf')">
+        <button
+          id="download-btn"
+          onclick="window.open('./media/docs/Jacob_Mayeux_2022_Resume.pdf')"
+        >
           Download
         </button>
       </div>
@@ -55,7 +65,7 @@
       <article>
         <h3>Work Experience</h3>
         <h4>Software Developer / SAP Technical Specialist [IBM]</h4>
-        <h5>December 2018 - July 2020</h5>
+        <h5 class="date-text">December 2018 - July 2020</h5>
         <ul>
           <li>SAP UI5 developer and consultant</li>
           <li>
@@ -80,9 +90,13 @@
         </ul>
 
         <h4>Nursing</h4>
-        <h5>May 2009 - May 2014 [LPN - Nursing Home, Med/Surg, Home Health]</h5>
-        <h5>May 2014 - February 2019 [RN - Emergency Room]</h5>
-        <h5>July 2020 - Current[RN - Emergency Room]</h5>
+        <h5 class="date-text">
+          May 2009 - May 2014 [LPN - Nursing Home, Med/Surg, Home Health]
+        </h5>
+        <h5 class="date-text">
+          May 2014 - February 2019 [RN - Emergency Room]
+        </h5>
+        <h5 class="date-text">July 2020 - Current[RN - Emergency Room]</h5>
         <ul>
           <li>
             Charge Nurse - Responsible for logistics of patients and staff
@@ -116,7 +130,10 @@
       <article>
         <h3>Awards</h3>
         <ul>
-          <li>Advanced Cardiovascular Life Support (ACLS): 2022</li>
+          <li>
+            GBS Service Excellence Award (SEA) - Practice "Put Client First":
+            2019
+          </li>
         </ul>
       </article>
       <article>
@@ -146,25 +163,25 @@
         <h3>Education</h3>
         <div class="column school-content">
           <h4 class="school-header">Baton Rouge Community College</h4>
-          <h5 class="school-header">2017-2018</h5>
-          <h5 class="school-header">Associate of Science - Computer Science</h5>
+          <p class="date-text">2017-2018</p>
+          <p class="school-header">Associate of Science - Computer Science</p>
         </div>
         <div class="column school-content">
           <h4 class="school-header">Baton Rouge Community College</h4>
-          <h5 class="school-header">2013-2014</h5>
-          <h5 class="school-header">Associate of Science - Nursing</h5>
+          <p class="date-text">2013-2014</p>
+          <p class="school-header">Associate of Science - Nursing</p>
         </div>
         <div class="column school-content">
           <h4 class="school-header">Louisiana Technical College</h4>
-          <h5 class="school-header">2008-2009</h5>
-          <h5 class="school-header">Technical Diploma - Practical Nursing</h5>
+          <p class="date-text">2008-2009</p>
+          <p class="school-header">Technical Diploma - Practical Nursing</p>
         </div>
         <div class="column school-content">
           <h4 class="school-header">
             Louisiana School for Math Science and the Arts
           </h4>
-          <h5 class="school-header">2002-2004</h5>
-          <h5 class="school-header">High School Diploma</h5>
+          <p class="date-text">2002-2004</p>
+          <p class="school-header">High School Diploma</p>
         </div>
       </article>
     </section>
@@ -174,15 +191,18 @@
         <div class="project">
           <h3>Do I Have That Card</h3>
           <img
-            src="https://via.placeholder.com/150x150"
+            src="./media/images/Do_I_Have_That_Card.jpg"
             alt="Do I Have That Card Screenshot"
+            class="project-img"
           />
-          <div class="row">SVGs go here</div>
+          <div class="row">
+            <img src="./media/Icons/react.svg" class="icons" />
+          </div>
         </div>
         <div class="project">
           <h3>Rapid Response</h3>
           <img
-            src="https://via.placeholder.com/150x150"
+            src="https://via.placeholder.com/250x250"
             alt="Rapid Respons Screenshot"
           />
           <div class="row">SVGs go here</div>
@@ -190,7 +210,7 @@
         <div class="project">
           <h3>Tartaros</h3>
           <img
-            src="https://via.placeholder.com/150x150"
+            src="https://via.placeholder.com/250x250"
             alt="Tartaros Screenshot"
           />
           <div class="row">SVGs go here</div>
@@ -200,7 +220,7 @@
     <section class="card" id="contact-section">
       <div class="row">
         <img
-          src="./media/Contact Me.jpg"
+          src="./media/images/Contact Me.jpg"
           alt="Contact me image"
           id="contact-me-img"
         />
@@ -219,11 +239,18 @@
             ></textarea>
           </div>
 
-          <button disabled>Contact Me</button>
+          <button disabled>Send Message</button>
         </form>
       </div>
     </section>
-    <footer></footer>
+    <footer>
+      <a href="https://www.linkedin.com/in/jacobmayeux/" target="_blank"
+        ><img class="icons" src="./media/Icons/linkedin.svg"
+      /></a>
+      <a href="https://www.github.com/pyRN" target="_blank">
+        <img class="icons" src="./media/Icons/github.svg"/ alt="Github SVG">
+      </a>
+    </footer>
   </body>
   <script src="index.js"></script>
 </html>

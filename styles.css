@@ -15,36 +15,32 @@ body {
   background-color: var(--background-color);
 }
 
-#contact-me-img,
-#avatar-img {
-  border: 1px solid var(--primary-color);
-  border-radius: 50%;
-  object-fit: cover;
-  min-width: 250px;
-  width: 300px;
-  height: 300px;
-}
-
-#main-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: calc(50vh - 50px);
+h1 {
+  font-size: 25pt;
 }
 
 h2 {
-  font-size: 25pt;
+  font-size: 35pt;
   margin: 0;
   color: var(--primary-color);
 }
 
-.resume-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+h3,
+label {
+  font-size: 25pt;
+  margin: 10px 0;
+  text-decoration: underline;
+}
+
+h4,
+h5 {
+  font-size: 20pt;
+  margin: 10px 0;
+}
+
+p,
+li {
+  font-size: 15pt;
 }
 
 button {
@@ -63,11 +59,76 @@ button:hover {
   transition: ease-in 0.3s;
 }
 
+input,
+textarea {
+  height: 30px;
+  border-radius: 8px;
+  border: 2px solid var(--primary-color);
+}
+
+textarea {
+  height: 100px;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+img {
+  border-radius: 8px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  height: 50px;
+  background-color: #555;
+  padding: 0 30px;
+}
+
+#contact-me-img,
+#avatar-img {
+  border: 1px solid var(--primary-color);
+  border-radius: 30px;
+  object-fit: cover;
+  min-width: 250px;
+  width: 300px;
+  height: 300px;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: calc(50vh - 50px);
+}
+
+#contacts-message {
+  margin-bottom: 10px;
+}
+
+.resume-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .card {
   /* border: solid 1px var(--primary-color); */
   background-color: #eee;
-  border-radius: 8px;
-  padding: 10px;
+  border-radius: 15px;
+  padding: 30px;
   margin: 10px 10%;
   box-shadow: 0 0 5px #aaa;
 }
@@ -79,18 +140,27 @@ button:hover {
   padding: 0;
   margin: 0;
   align-items: center;
+  width: 100%;
 }
 
 .column {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .project {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  border: 1px solid white;
+  border: 1px solid var(--primary-color);
+  border-radius: 15px;
+  background-color: white;
+  margin: 5%;
+  padding: 10px;
+  width: 350px;
+  height: 400px;
+  text-align: center;
   /* 
   This is for rainbow border effect
 
@@ -99,9 +169,6 @@ button:hover {
   border-width: 8px;
   border-radius: 50%; 
   */
-
-  margin: 10px;
-  padding: 5%;
 }
 
 .flex-wrap {
@@ -118,23 +185,64 @@ button:hover {
 
 .project-preview {
   border: 1px solid var(--primary-color);
-  border-radius: 8px;
+  border-radius: 15px;
   width: 150px;
   height: 150px;
 }
 
+.project-img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  min-width: 250px;
+}
+
+.date-text {
+  font-size: 12pt;
+  margin: 0;
+}
+
+.school-header {
+  margin: 0;
+  font-size: 14pt;
+}
+
+.icons {
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.icons:hover {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  transition: ease-in 0.3s;
+}
+
 @media only screen and (max-width: 750px) {
   main,
-  section {
+  section,
+  article {
     margin: 0;
+  }
+
+  #main-content {
+    width: 100%;
+    height: auto;
   }
 
   .card {
     margin: 5px;
+    padding: 10px;
   }
 
   #contact-me-img,
-  #avatar-img {
+  #avatar-img,
+  #download-btn {
     display: none;
+  }
+
+  form {
+    width: 100%;
   }
 }
