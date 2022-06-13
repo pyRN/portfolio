@@ -110,6 +110,12 @@ footer {
   padding: 0 30px;
 }
 
+.brand{
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
 .avatar-img {
   border: 1px solid var(--primary-color);
   border-radius: 30px;
@@ -137,7 +143,8 @@ footer {
   text-align: center;
 }
 
-.icons {
+
+.icons, .tech-stack-icon {
   height: 30px;
   border-radius: 50%;
   margin: 0 5px;
