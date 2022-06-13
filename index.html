@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="./media/Icons/fleurdelis.svg" />
     <title>Jacob Mayeux</title>
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <link href="navbarStyles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <nav class="navbar">
-      <h1 class="brand">Jacob Mayeux</h1>
-      <div class="links">
+    <nav class="flex-row navbar">
+      <!-- <h1 class="brand">Jacob Mayeux</h1> -->
+      <img class="icons" src="./media/Icons/fleurdelis.svg"/ alt="Fleur De Lis
+              SVG">
+      <div class="flex-row links">
         <a href="#main-section" class="menu-link">About</a>
         <a href="#resume-section" class="menu-link">Resume</a>
         <a href="#projects-section" class="menu-link">Projects</a>
@@ -20,7 +23,7 @@
         <div class="hamburger-bar-1"></div>
         <div class="hamburger-bar-2"></div>
         <div class="hamburger-bar-3"></div>
-        <div class="mobile-menu">
+        <div class="flex-column mobile-menu">
           <a href="#main-section" class="mobile-menu-link">About</a>
           <a href="#resume-section" class="mobile-menu-link">Resume</a>
           <a href="#projects-section" class="mobile-menu-link">Projects</a>
@@ -28,39 +31,45 @@
         </div>
       </div>
     </nav>
+    <main class="card flex-row flex-wrap" id="main-section">
+      <img
+        src="./media/images/Avatar.jpg"
+        alt="Avatar"
+        id="avatar-img"
+        class="flex-column center w-50 avatar-img"
+      />
 
-    <main class="card" id="main-section">
-      <div class="row">
-        <img
-          src="./media/images/Avatar.jpg"
-          alt="Image of me"
-          id="avatar-img"
-        />
-        <div id="main-content">
-          <h2>About Me</h2>
-          <article>
-            <p>
-              My name is Jacob, I am a registered nurse and web devoloper. I
-              have experience with saving lives and fixing bugs. I have worked
-              on multiple frontend projects while helping with backend decision
-              making. I am self sufficient with great critical thinking skills
-              that I learn while working as a nurse in the emergency room.
-            </p>
-          </article>
-          <button onclick="fnContactMe()">Contact Me</button>
+      <div id="main-content" class="flex-column w-50">
+        <div class="flex-column">
+          <p>Greetings! I'm</p>
+          <h2>Jacob Mayeux.</h2>
+        </div>
+
+        <p>
+          I have experience working in a high stress, fast paced environments as
+          a nurse in the emergency room; where critical thinking, time
+          management and communication is the key to saving lives and healing
+          patients. I have taken those same skills and incorporated them into
+          software development, where I have made frontend applications for
+          companies within the energy sector.
+          <!-- A registered nurse and web devoloper. I have experience with saving
+            lives and fixing bugs. I have worked on multiple frontend projects
+            while helping with backend decision making. I am self sufficient
+            with great critical thinking skills that I learn while working as a
+            nurse in the emergency room. -->
+        </p>
+        <div class="flex-row center">
+          <button
+            onclick="window.open('./media/docs/Jacob_Mayeux_2022_Resume.pdf')"
+          >
+            Resume
+          </button>
         </div>
       </div>
     </main>
+    <!--
     <section class="card" is="resume-section">
-      <div class="resume-header">
-        <h2>Resume</h2>
-        <button
-          id="download-btn"
-          onclick="window.open('./media/docs/Jacob_Mayeux_2022_Resume.pdf')"
-        >
-          Download
-        </button>
-      </div>
+      <h2>Resume</h2>
 
       <article>
         <h3>Work Experience</h3>
@@ -161,22 +170,22 @@
       </article>
       <article>
         <h3>Education</h3>
-        <div class="column school-content">
+        <div class="flex-column school-content">
           <h4 class="school-header">Baton Rouge Community College</h4>
           <p class="date-text">2017-2018</p>
           <p class="school-header">Associate of Science - Computer Science</p>
         </div>
-        <div class="column school-content">
+        <div class="flex-column school-content">
           <h4 class="school-header">Baton Rouge Community College</h4>
           <p class="date-text">2013-2014</p>
           <p class="school-header">Associate of Science - Nursing</p>
         </div>
-        <div class="column school-content">
+        <div class="flex-column school-content">
           <h4 class="school-header">Louisiana Technical College</h4>
           <p class="date-text">2008-2009</p>
           <p class="school-header">Technical Diploma - Practical Nursing</p>
         </div>
-        <div class="column school-content">
+        <div class="flex-column school-content">
           <h4 class="school-header">
             Louisiana School for Math Science and the Arts
           </h4>
@@ -185,69 +194,117 @@
         </div>
       </article>
     </section>
+     -->
     <section class="card" id="projects-section">
       <h2>Projects</h2>
-      <div class="row flex-wrap">
-        <div class="project">
-          <h3>Do I Have That Card</h3>
-          <img
-            src="./media/images/Do_I_Have_That_Card.jpg"
-            alt="Do I Have That Card Screenshot"
-            class="project-img"
-          />
-          <div class="row">
-            <img src="./media/Icons/react.svg" class="icons" />
+      <div class="flex-column center">
+        <!-- Projects -->
+        <div class="project flex-row flex-wrap" id="main-section">
+          
+          
+
+          <div id="main-content" class="flex-column w-50">
+            <h3 class="project-title">Do I Have That Card</h3>
+            <ul>
+              <li>
+                A simple web application, design to save a collection of Magic:
+                The Gathering cards so that you can view whether or not you have
+                a specific card when searched.
+              </li>
+              <li>
+                Utilizes Google Firebase for user authentication, storing user
+                data and API for requesting user data.
+              </li>
+            </ul>
+            <a
+              href="https://github.com/pyRN/that-card-firebase"
+              target="_blank"
+              class="footer-link"
+            >
+              <img class="icons" src="./media/Icons/github.svg"/ alt="Github
+              SVG">
+            </a>
           </div>
-        </div>
-        <div class="project">
+          <div class="flex-column">
+            <a href="https://www.doihavethatcard.com" target="_blank"><img
+              src="./media/images/Do_I_Have_That_Card.jpg"
+              alt="Do I Have That Card Screenshot"
+              class="avatar-img"
+            /></a>
+            <div class="flex-row skills">
+              <img
+                src="./media/Icons/react.svg"
+                class="icons"
+                alt="react-svg"
+              />
+              <img src="./media/Icons/js.svg" class="icons" alt="js-svg" />
+              <img src="./media/Icons/html5.svg" class="icons" alt="html-svg" />
+              <img src="./media/Icons/css3.svg" class="icons" alt="css-svg" />
+              <img
+                src="./media/Icons/firebase.svg"
+                class="icons"
+                alt="firebase-svg"
+              />
+              <img
+                src="./media/Icons/firestore.svg"
+                class="icons"
+                alt="firestore-svg"
+              />
+            </div></div>
+        </main>
+
+        
+        <!-- <div class="flex-column project">
           <h3>Rapid Response</h3>
           <img
-            src="https://via.placeholder.com/250x250"
-            alt="Rapid Respons Screenshot"
+            src="./media/images/Rapid_Response.jpg"
+            alt="Rapid Response
+          Screenshot"
+            class="project-img"
           />
-          <div class="row">SVGs go here</div>
+          <div class="flex-row">SVGs go here</div>
         </div>
-        <div class="project">
+        <div class="flex-column project">
           <h3>Tartaros</h3>
-          <img
-            src="https://via.placeholder.com/250x250"
-            alt="Tartaros Screenshot"
-          />
-          <div class="row">SVGs go here</div>
+          <img src="https://via.placeholder.com/250x250" alt="Tartaros
+          Screenshot" class="project-img />
+          <div class="flex-row">SVGs go here</div>
+        </div> -->
+      </div>
+    </section>
+    <section class="card flex-row center flex-wrap" id="contact-section">
+      <img
+        src="./media/images/Contact Me.jpg"
+        alt="Contact me image"
+        id="contact-me-img"
+        class="w-50 avatar-img"
+      />
+      <form class="flex-column center w-50">
+        <h2>Contact Me</h2>
+        <div class="flex-column w-100">
+          <label for="contacts-name">Name:</label>
+          <input placeholder="Full Name" id="contacts-name" required />
         </div>
-      </div>
-    </section>
-    <section class="card" id="contact-section">
-      <div class="row">
-        <img
-          src="./media/images/Contact Me.jpg"
-          alt="Contact me image"
-          id="contact-me-img"
-        />
-        <form>
-          <h2>Contact Me</h2>
-          <div class="column">
-            <label for="contacts-name">Name:</label>
-            <input placeholder="Full Name" id="contacts-name" required />
-          </div>
-          <div class="column">
-            <label for="contacts-message">Message:</label>
-            <textarea
-              id="contacts-message"
-              placeholder="Type Message"
-              required
-            ></textarea>
-          </div>
+        <div class="flex-column w-100">
+          <label for="contacts-message">Message:</label>
+          <textarea
+            id="contacts-message"
+            placeholder="Type Message"
+            required
+          ></textarea>
+        </div>
 
-          <button disabled>Send Message</button>
-        </form>
-      </div>
+        <button disabled>Send Message</button>
+      </form>
     </section>
-    <footer>
-      <a href="https://www.linkedin.com/in/jacobmayeux/" target="_blank"
+    <footer class="flex-row">
+      <a
+        href="https://www.linkedin.com/in/jacobmayeux/"
+        target="_blank"
+        class="footer-link"
         ><img class="icons" src="./media/Icons/linkedin.svg"
       /></a>
-      <a href="https://www.github.com/pyRN" target="_blank">
+      <a href="https://www.github.com/pyRN" target="_blank" class="footer-link">
         <img class="icons" src="./media/Icons/github.svg"/ alt="Github SVG">
       </a>
     </footer>

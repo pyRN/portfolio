@@ -1,18 +1,43 @@
 /* Colors */
 :root {
-  --primary-color: hsl(214, 72%, 54%); /*rgb(51, 51, 243);*/
-  --primary-text-color: white;
-  --background-color: white;
-  /* 
-  This is used for cyberpunk themed rainbow gradient
-  --gradient: #00ff9f 10%, #00b8ff 25%, #001eff 50%, #bd00ff 75%, #d600ff 90%; */
+  --primary-color: hsl(214, 72%, 54%);
+  --background-color: #3b3d5a;
+  --dark-blue: #2a2b40;
+  --light-blue: #65688f;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--background-color);
+  background-color: var(--light-blue);
 }
 
 h1 {
@@ -29,18 +54,21 @@ h3,
 label {
   font-size: 25pt;
   margin: 10px 0;
-  text-decoration: underline;
+  color: var(--primary-color);
 }
 
 h4,
 h5 {
   font-size: 20pt;
   margin: 10px 0;
+  color: white;
 }
 
 p,
 li {
   font-size: 15pt;
+  color: var(--primary-color);
+  margin: 0;
 }
 
 button {
@@ -50,6 +78,7 @@ button {
   color: white;
   height: 35px;
   width: 150px;
+  margin-top: 10px;
 }
 
 button:hover {
@@ -71,31 +100,28 @@ textarea {
   border-radius: 8px;
 }
 
+textarea:focus,
+textarea::placeholder,
+input:focus,
+input::placeholder {
+  color: var(--primary-color);
+}
+
 form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 50%;
 }
 
-img {
-  border-radius: 8px;
-}
-
 footer {
-  display: flex;
-  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   position: sticky;
   bottom: 0;
   height: 50px;
-  background-color: #555;
+  background-color: var(--dark-blue);
   padding: 0 30px;
 }
 
-#contact-me-img,
-#avatar-img {
+.avatar-img {
   border: 1px solid var(--primary-color);
   border-radius: 30px;
   object-fit: cover;
@@ -105,12 +131,7 @@ footer {
 }
 
 #main-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: calc(50vh - 50px);
+  margin: 10px;
 }
 
 #contacts-message {
@@ -118,57 +139,30 @@ footer {
 }
 
 .resume-header {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
 .card {
-  /* border: solid 1px var(--primary-color); */
-  background-color: #eee;
+  background: var(--background-color);
   border-radius: 15px;
   padding: 30px;
   margin: 10px 10%;
-  box-shadow: 0 0 5px #aaa;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
-  padding: 0;
-  margin: 0;
-  align-items: center;
-  width: 100%;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
 .project {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  border: 1px solid var(--primary-color);
+  justify-content: space-evenly;
   border-radius: 15px;
-  background-color: white;
+  background: linear-gradient(to left top, var(--dark-blue), black);
   margin: 5%;
-  padding: 10px;
-  width: 350px;
-  height: 400px;
+  padding: 20px;
+  width: 90%;
   text-align: center;
-  /* 
-  This is for rainbow border effect
+}
 
-  border-image: linear-gradient(35deg, var(--gradient)) 0.5;
-  border-style: solid;
-  border-width: 8px;
-  border-radius: 50%; 
-  */
+.skills {
+  margin: 10px;
 }
 
 .flex-wrap {
@@ -197,7 +191,7 @@ footer {
   min-width: 250px;
 }
 
-.date-text {
+/* .date-text {
   font-size: 12pt;
   margin: 0;
 }
@@ -205,7 +199,7 @@ footer {
 .school-header {
   margin: 0;
   font-size: 14pt;
-}
+} */
 
 .icons {
   height: 30px;
@@ -214,16 +208,17 @@ footer {
 }
 
 .icons:hover {
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9);
-  transition: ease-in 0.3s;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: ease-in 0.2s;
+  filter: drop-shadow(0px 0px 8px var(--primary-color));
 }
 
 @media only screen and (max-width: 750px) {
   main,
   section,
   article {
-    margin: 0;
+    margin: 10px;
   }
 
   #main-content {
@@ -236,13 +231,17 @@ footer {
     padding: 10px;
   }
 
-  #contact-me-img,
-  #avatar-img,
-  #download-btn {
-    display: none;
+  .project {
+    justify-content: center;
+    align-items: center;
   }
 
   form {
     width: 100%;
+  }
+
+  .footer-link {
+    margin: 0;
+    width: 50px;
   }
 }
