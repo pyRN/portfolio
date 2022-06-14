@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Jacob Mayeux's portfolio website."/>
     <link rel="icon" href="./media/Icons/fleurdelis.svg" />
     <title>Jacob Mayeux</title>
     <link href="styles.css" rel="stylesheet" type="text/css" />
@@ -21,7 +22,7 @@
         <div class="flex-row menu-link center"> 
           <img class="hover-icon" src="./media/Icons/fleurdelis.svg"/ alt="Fleur De Lis
               SVG">
-              <a href="#resume-section" class="menu-link">Resume</a>
+              <a href="#" class="menu-link" onclick="window.open('./media/docs/Jacob_Mayeux_2022_Resume.pdf')">Resume</a>
         </div>
         <div class="flex-row menu-link center"> 
           <img class="hover-icon" src="./media/Icons/fleurdelis.svg"/ alt="Fleur De Lis
@@ -40,7 +41,7 @@
         <div class="hamburger-bar-3"></div>
         <div class="flex-column mobile-menu">
           <a href="#main-section" class="mobile-menu-link">About</a>
-          <a href="#resume-section" class="mobile-menu-link">Resume</a>
+          <a href="#" onclick="window.open('./media/docs/Jacob_Mayeux_2022_Resume.pdf')" class="mobile-menu-link">Resume</a>
           <a href="#projects-section" class="mobile-menu-link">Projects</a>
           <a href="#contact-section" class="mobile-menu-link">Contact</a>
         </div>
@@ -48,13 +49,13 @@
     </nav>
     <main class="card flex-row flex-wrap mobile-card" id="main-section">
       <img
-        src="./media/images/Avatar.jpg"
+        src="./media/images/Avatar.avif"
         alt="Avatar"
         id="avatar-img"
-        class="flex-column center w-50 avatar-img"
+        class="flex-column center w-50 avatar-img rotate-img"
       />
 
-      <div id="main-content" class="flex-column w-50 mobile-content">
+      <div class="flex-column w-50 mobile-content">
         <div class="flex-column">
           <p>Greetings! I'm</p>
           <h2>Jacob Mayeux</h2>
@@ -80,32 +81,32 @@
     <div class="card" id="projects-section">
       <h2>Projects</h2>
       <div class="flex-column center">
-        <div class="project flex-row flex-wrap" id="main-section">
-          <div id="main-content" class="flex-column w-50">
+        <div class="project flex-row flex-wrap mobile-card">
+          <div class="flex-column w-50 mobile-content">
             <h3 class="project-title">Do I Have That Card</h3>
-            <ul>
+            <ul class="project-details">
               <li>
-                A simple web application, design to save a collection of Magic:
-                The Gathering cards so that you can view whether or not you have
-                a specific card when searched.
+                A light weight web application, design to save a collection of Magic:
+                The Gathering cards.
               </li>
               <li>
-                Utilizes Google Firebase for user authentication, storing user
-                data and API for requesting user data.
+                Google Firebase for user authentication
               </li>
+              <li>Google Firestore for API requests</li>
             </ul>
-            <a
+            <div class="flex-row center"><a
               href="https://github.com/pyRN/that-card-firebase"
               target="_blank"
               class="footer-link"
             >
               <img class="icons" src="./media/Icons/github.svg" alt="Github
               SVG"/>
-            </a>
+            </a></div>
+            
           </div>
-          <div class="flex-column">
+          <div class="flex-column center mobile-content">
             <a href="https://www.doihavethatcard.com" target="_blank"><img
-              src="./media/images/Do_I_Have_That_Card.jpg"
+              src="./media/images/Do_I_Have_That_Card.avif"
               alt="Do I Have That Card Screenshot"
               class="avatar-img"
             /></a>
@@ -133,11 +134,11 @@
         </div>
       </div>
     </div>
-    <div class="card flex-row flex-wrap mobile-card">
+    <div class="card flex-row flex-wrap mobile-card" id="contact-section">
       <img
-        src="./media/images/Contact Me.jpg"
+        src="./media/images/Contact-Me.avif"
         alt="Contact me image"
-        class="flex-column center w-50 avatar-img"
+        class="flex-column center w-50 avatar-img rotate-img"
       />
 
         <form class="flex-column w-50 mobile-content">
@@ -164,7 +165,7 @@
         href="https://www.linkedin.com/in/jacobmayeux/"
         target="_blank"
         class="footer-link"
-        ><img class="icons" src="./media/Icons/linkedin.svg"
+        ><img class="icons" src="./media/Icons/linkedin.svg" alt="LinkedIn SVG"
       /></a>
       <a href="https://www.github.com/pyRN" target="_blank" class="footer-link">
         <img class="icons" src="./media/Icons/github.svg"/ alt="Github SVG">

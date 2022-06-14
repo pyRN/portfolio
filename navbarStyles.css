@@ -73,7 +73,7 @@
 .menu-link {
   text-decoration: none;
   color: var(--primary-color);
-  font-size: 15pt;
+  font-size: 20pt;
 }
 
 .menu-link:hover .hover-icon {

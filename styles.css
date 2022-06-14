@@ -1,9 +1,9 @@
 /* Colors */
 :root {
   --primary-color: hsl(214, 72%, 54%);
-  --background-color: #3b3d5a;
+  --background-color: #222; /*#3b3d5a;*/
   --dark-blue: #2a2b40;
-  --light-blue: #65688f;
+  --light-blue: #3b3d5a;
 }
 
 .flex-row {
@@ -37,7 +37,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--light-blue);
+  background-color: var(--background-color);
 }
 
 h1 {
@@ -67,16 +67,16 @@ li {
 button {
   border-radius: 7px;
   border: 1px solid var(--primary-color);
-  background-color: var(--primary-color);
-  color: white;
+  background-color: var(--dark-blue);
+  color: var(--primary-color);
   height: 35px;
   width: 150px;
   margin-top: 10px;
 }
 
 button:hover {
-  background-color: white;
-  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--dark-blue);
   color: var(--primary-color);
   transition: ease-in 0.3s;
 }
@@ -123,8 +123,20 @@ footer {
   height: 300px;
 }
 
+.rotate-img {
+  transform: rotate(90deg);
+}
+
 .card {
-  background: var(--background-color);
+  background: var(--light-blue);
+  /* background: linear-gradient(to right top, var(--light-blue), black); */
+  background: linear-gradient(
+      17deg,
+      var(--light-blue),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(27deg, var(--dark-blue), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(6deg, black, rgba(0, 0, 255, 0) 70.71%);
   border-radius: 15px;
   padding: 30px;
   margin: 10px 10%;
@@ -133,12 +145,17 @@ footer {
 
 .project {
   justify-content: space-evenly;
+  align-items: center;
   border-radius: 15px;
-  background: linear-gradient(to left top, var(--dark-blue), black);
+  background: linear-gradient(to right top, black, var(--dark-blue));
   margin: 5%;
   padding: 20px;
-  width: 90%;
+  width: auto;
   text-align: center;
+}
+
+.project-details {
+  text-align: left;
 }
 
 .icons,
@@ -156,17 +173,6 @@ footer {
 }
 
 @media only screen and (max-width: 900px) {
-  main,
-  section,
-  article {
-    margin: 10px;
-  }
-
-  #main-content {
-    width: 100%;
-    height: auto;
-  }
-
   .card {
     margin: 5px;
     padding: 10px;
@@ -180,9 +186,6 @@ footer {
 
   .mobile-content {
     width: 100%;
-  }
-
-  .project {
     justify-content: center;
     align-items: center;
   }
