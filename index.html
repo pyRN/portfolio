@@ -30,7 +30,7 @@
         </div>
       </div>
     </nav>
-    <main class="card flex-row flex-wrap" id="main-section">
+    <main class="card flex-row flex-wrap mobile-card" id="main-section">
       <img
         src="./media/images/Avatar.jpg"
         alt="Avatar"
@@ -38,7 +38,7 @@
         class="flex-column center w-50 avatar-img"
       />
 
-      <div id="main-content" class="flex-column w-50">
+      <div id="main-content" class="flex-column w-50 mobile-content">
         <div class="flex-column">
           <p>Greetings! I'm</p>
           <h2>Jacob Mayeux</h2>
@@ -61,7 +61,7 @@
         </div>
       </div>
     </main>
-    <section class="card" id="projects-section">
+    <div class="card" id="projects-section">
       <h2>Projects</h2>
       <div class="flex-column center">
         <div class="project flex-row flex-wrap" id="main-section">
@@ -83,8 +83,8 @@
               target="_blank"
               class="footer-link"
             >
-              <img class="icons" src="./media/Icons/github.svg"/ alt="Github
-              SVG">
+              <img class="icons" src="./media/Icons/github.svg" alt="Github
+              SVG"/>
             </a>
           </div>
           <div class="flex-column">
@@ -112,22 +112,23 @@
                 class="tech-stack-icon"
                 alt="firestore-svg"
               />
-            </div></div>
-        </main>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-    <section class="card flex-row center flex-wrap" id="contact-section">
+    </div>
+    <div class="card flex-row flex-wrap mobile-card">
       <img
         src="./media/images/Contact Me.jpg"
         alt="Contact me image"
-        id="contact-me-img"
-        class="w-50 avatar-img"
+        class="flex-column center w-50 avatar-img"
       />
-      <form class="flex-column center w-50">
+
+        <form class="flex-column w-50 mobile-content">
         <h2>Contact Me</h2>
         <div class="flex-column w-100">
           <label for="contacts-name">Name:</label>
-          <input placeholder="Full Name" id="contacts-name" required />
+          <input placeholder="Full Name" required />
         </div>
         <div class="flex-column w-100">
           <label for="contacts-message">Message:</label>
@@ -138,9 +139,10 @@
           ></textarea>
         </div>
 
-        <button disabled>Send Message</button>
-      </form>
-    </section>
+        <button >Send Message</button>
+      </form>        
+      </div>
+    </div>
     <footer class="flex-row">
       <a
         href="https://www.linkedin.com/in/jacobmayeux/"
