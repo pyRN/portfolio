@@ -16,6 +16,13 @@
   margin: 0 5px;
 }
 
+.hover-icon {
+  height: 15px;
+  border-radius: 50%;
+  visibility: hidden;
+  margin: 0 3px;
+}
+
 .hamburger-menu {
   cursor: pointer;
   display: none;
@@ -69,11 +76,11 @@
   font-size: 15pt;
 }
 
-.menu-link:hover {
+.menu-link:hover .hover-icon {
+  visibility: visible;
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
-  transition: ease-in 0.2s;
-  filter: drop-shadow(0px 0px 8px var(--primary-color));
+  transition: ease-in 0.1s;
 }
 
 @media only screen and (max-width: 750px) {
