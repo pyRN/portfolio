@@ -112,6 +112,19 @@ footer {
   height: 300px;
 }
 
+#show-more {
+  cursor: pointer;
+  text-decoration: none;
+}
+#show-less {
+  cursor: pointer;
+  display: none;
+  text-decoration: none;
+}
+
+#more-text {
+  display: none;
+}
 .project-img {
   object-fit: scale-down;
 }
