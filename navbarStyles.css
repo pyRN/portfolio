@@ -88,14 +88,6 @@
     display: block;
   }
 
-  .navbar {
-    justify-content: flex-end;
-  }
-
-  .brand {
-    display: none;
-  }
-
   .nav-links {
     display: none;
   }
