@@ -50,11 +50,15 @@ h2 {
   color: var(--primary-color);
 }
 
-h3,
-label {
+h3 {
   font-size: 25pt;
   margin: 10px 0;
   color: var(--primary-color);
+}
+
+h3 > a {
+  text-decoration: none;
+  text-size-adjust: none;
 }
 
 p,
@@ -81,27 +85,12 @@ button:hover {
   transition: ease-in 0.3s;
 }
 
-input,
-textarea {
-  height: 30px;
-  border-radius: 8px;
-  border: 2px solid var(--primary-color);
-  background-color: var(--dark-blue);
-  color: var(--primary-color);
-  text-align: center;
+a {
+  text-size-adjust: none;
 }
 
-textarea {
-  height: 100px;
-}
-
-textarea:focus,
-textarea::placeholder,
-input:focus,
-input::placeholder {
-  outline: none !important;
-  color: var(--primary-color);
-  text-align: center;
+a:visited {
+  color: var(--primary);
 }
 
 footer {
@@ -123,6 +112,10 @@ footer {
   height: 300px;
 }
 
+.project-img {
+  object-fit: scale-down;
+}
+
 .rotate-img {
   transform: rotate(90deg);
 }
@@ -141,6 +134,12 @@ footer {
   padding: 30px;
   margin: 10px 10%;
   justify-content: space-evenly;
+}
+
+.content {
+  border-radius: 15px;
+  background: linear-gradient(to right top, var(--light-blue), #222);
+  padding: 10px;
 }
 
 .project {
@@ -185,7 +184,7 @@ footer {
   }
 
   .mobile-content {
-    width: 100%;
+    width: 90%;
     justify-content: center;
     align-items: center;
   }
@@ -197,5 +196,14 @@ footer {
   .footer-link {
     margin: 0;
     width: 50px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  a {
+    text-size-adjust: none;
+    font-size: 15pt !important;
+    text-decoration: underline !important;
+    margin: 0 !important;
   }
 }

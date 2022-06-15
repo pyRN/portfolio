@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Jacob Mayeux's portfolio website."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jacob Mayeux's portfolio website." />
     <link rel="icon" href="./media/Icons/fleurdelis.svg" />
     <title>Jacob Mayeux</title>
     <link href="styles.css" rel="stylesheet" type="text/css" />
@@ -12,27 +12,32 @@
   <body>
     <nav class="flex-row navbar">
       <img class="brand" src="./media/Icons/fleurdelis.svg"/ alt="Fleur De Lis
-              SVG">
+      SVG" width="50px" height="50px">
       <div class="flex-row links">
-        <div class="flex-row menu-link center"> 
-          <img class="hover-icon" src="./media/Icons/fleurdelis.svg"/ alt="Fleur De Lis
-              SVG">
-              <a href="#main-section" class="menu-link">About</a>
+        <div class="flex-row menu-link center">
+          <img class="hover-icon" src="./media/Icons/fleurdelis.svg"/ alt="Fleur
+          De Lis SVG" width="15px" height="15px">
+          <a href="#main-section" class="menu-link">About</a>
         </div>
-        <div class="flex-row menu-link center"> 
-          <img class="hover-icon" src="./media/Icons/fleurdelis.svg"/ alt="Fleur De Lis
-              SVG">
-              <a href="#" class="menu-link" onclick="window.open('./media/docs/Jacob_Mayeux_2022_Resume.pdf')">Resume</a>
+        <div class="flex-row menu-link center">
+          <img class="hover-icon" src="./media/Icons/fleurdelis.svg"/ alt="Fleur
+          De Lis SVG" width="15px" height="15px">
+          <a
+            href="#"
+            class="menu-link"
+            onclick="window.open('./media/docs/Jacob_Mayeux_2022_Resume.pdf')"
+            >Resume</a
+          >
         </div>
-        <div class="flex-row menu-link center"> 
-          <img class="hover-icon" src="./media/Icons/fleurdelis.svg"/ alt="Fleur De Lis
-              SVG">
-              <a href="#projects-section" class="menu-link">Projects</a>
+        <div class="flex-row menu-link center">
+          <img class="hover-icon" src="./media/Icons/fleurdelis.svg"/ alt="Fleur
+          De Lis SVG" width="15px" height="15px">
+          <a href="#projects-section" class="menu-link">Projects</a>
         </div>
-        <div class="flex-row menu-link center"> 
-          <img class="hover-icon" src="./media/Icons/fleurdelis.svg"/ alt="Fleur De Lis
-              SVG">
-              <a href="#contact-section" class="menu-link">Contact</a>
+        <div class="flex-row menu-link center">
+          <img class="hover-icon" src="./media/Icons/fleurdelis.svg"/ alt="Fleur
+          De Lis SVG" width="15px" height="15px">
+          <a href="#contact-section" class="menu-link">Contact</a>
         </div>
       </div>
       <div class="hamburger-menu" id="hamburgerMenu" onclick="fnOpenMenu(this)">
@@ -41,7 +46,12 @@
         <div class="hamburger-bar-3"></div>
         <div class="flex-column mobile-menu">
           <a href="#main-section" class="mobile-menu-link">About</a>
-          <a href="#" onclick="window.open('./media/docs/Jacob_Mayeux_2022_Resume.pdf')" class="mobile-menu-link">Resume</a>
+          <a
+            href="#"
+            onclick="window.open('./media/docs/Jacob_Mayeux_2022_Resume.pdf')"
+            class="mobile-menu-link"
+            >Resume</a
+          >
           <a href="#projects-section" class="mobile-menu-link">Projects</a>
           <a href="#contact-section" class="mobile-menu-link">Contact</a>
         </div>
@@ -53,9 +63,11 @@
         alt="Avatar"
         id="avatar-img"
         class="flex-column center w-50 avatar-img rotate-img"
+        width="300px"
+        height="300px"
       />
 
-      <div class="flex-column w-50 mobile-content">
+      <div class="flex-column w-50 content mobile-content">
         <div class="flex-column">
           <p>Greetings! I'm</p>
           <h2>Jacob Mayeux</h2>
@@ -83,51 +95,105 @@
       <div class="flex-column center">
         <div class="project flex-row flex-wrap mobile-card">
           <div class="flex-column w-50 mobile-content">
-            <h3 class="project-title">Do I Have That Card</h3>
+            <h3 class="project-title">
+              <a href="https://www.doihavethatcard.com" target="_blank"
+                >Do I Have That Card</a
+              >
+            </h3>
             <ul class="project-details">
               <li>
-                A light weight web application, design to save a collection of Magic:
-                The Gathering cards.
+                A light weight web application, designed to save a collection of
+                Magic: The Gathering cards.
               </li>
               <li>
-                Google Firebase for user authentication
+                <a href="https://firebase.google.com/" target="_blank"
+                  >Google Firebase</a
+                >
+                for user authentication and backend API calls
               </li>
-              <li>Google Firestore for API requests</li>
+              <li>
+                <a
+                  href="https://firebase.google.com/products/firestore"
+                  target="_blank"
+                  >Google Firestore</a
+                >
+                - NoSQL Database
+              </li>
+              <li>
+                <a href="https://scryfall.com/docs/api" target="_blank"
+                  >Scryfall API</a
+                >
+                for Magic: The Gathering card information
+              </li>
             </ul>
-            <div class="flex-row center"><a
-              href="https://github.com/pyRN/that-card-firebase"
-              target="_blank"
-              class="footer-link"
-            >
-              <img class="icons" src="./media/Icons/github.svg" alt="Github
-              SVG"/>
-            </a></div>
-            
+            <div class="flex-row center">
+              <a
+                href="https://github.com/pyRN/that-card-firebase"
+                target="_blank"
+                class="footer-link"
+              >
+                <img
+                  class="icons"
+                  src="./media/Icons/github.svg"
+                  alt="Github
+              SVG"
+                  width="30px"
+                  height="30px"
+                />
+              </a>
+            </div>
           </div>
           <div class="flex-column center mobile-content">
-            <a href="https://www.doihavethatcard.com" target="_blank"><img
-              src="./media/images/Do_I_Have_That_Card.avif"
-              alt="Do I Have That Card Screenshot"
-              class="avatar-img"
+            <a href="https://www.doihavethatcard.com" target="_blank"
+              ><img
+                src="./media/images/Do_I_Have_That_Card.avif"
+                alt="Do I Have That Card Screenshot"
+                class="avatar-img project-img"
+                width="300px"
+                height="300px"
             /></a>
             <div class="flex-row center">
               <img
                 src="./media/Icons/react.svg"
                 class="tech-stack-icon"
                 alt="react-svg"
+                width="30px"
+                height="30px"
               />
-              <img src="./media/Icons/js.svg" class="tech-stack-icon" alt="js-svg" />
-              <img src="./media/Icons/html5.svg" class="tech-stack-icon" alt="html-svg" />
-              <img src="./media/Icons/css3.svg" class="tech-stack-icon" alt="css-svg" />
+              <img
+                src="./media/Icons/js.svg"
+                class="tech-stack-icon"
+                alt="js-svg"
+                width="30px"
+                height="30px"
+              />
+              <img
+                src="./media/Icons/html5.svg"
+                class="tech-stack-icon"
+                alt="html-svg"
+                width="30px"
+                height="30px"
+              />
+              <img
+                src="./media/Icons/css3.svg"
+                class="tech-stack-icon"
+                alt="css-svg"
+                width="30px"
+                height="30px"
+              />
               <img
                 src="./media/Icons/firebase.svg"
                 class="tech-stack-icon"
                 alt="firebase-svg"
+                width="30px"
+                height="30px"
               />
               <img
                 src="./media/Icons/firestore.svg"
                 class="tech-stack-icon"
                 alt="firestore-svg"
+                width="30px"
+                height="30px"
               />
             </div>
           </div>
@@ -139,25 +205,16 @@
         src="./media/images/Contact-Me.avif"
         alt="Contact me image"
         class="flex-column center w-50 avatar-img rotate-img"
+        width="300px"
+        height="300px"
       />
 
-        <form class="flex-column w-50 mobile-content">
+      <div class="flex-column content w-50 mobile-content center">
         <h2>Contact Me</h2>
-        <div class="flex-column w-100">
-          <label for="contacts-name">Name:</label>
-          <input placeholder="Full Name" required />
-        </div>
-        <div class="flex-column w-100">
-          <label for="contacts-message">Message:</label>
-          <textarea
-            id="contacts-message"
-            placeholder="Type Message"
-            required
-          ></textarea>
-        </div>
-
-        <button >Send Message</button>
-      </form>        
+        <ul>
+          <li><p>jacobmayeux@gmail.com</p></li>
+          <li><p>337-852-8647</p></li>
+        </ul>
       </div>
     </div>
     <footer class="flex-row">
@@ -165,10 +222,16 @@
         href="https://www.linkedin.com/in/jacobmayeux/"
         target="_blank"
         class="footer-link"
-        ><img class="icons" src="./media/Icons/linkedin.svg" alt="LinkedIn SVG"
+        ><img
+          class="icons"
+          src="./media/Icons/linkedin.svg"
+          alt="LinkedIn SVG"
+          width="30px"
+          height="30px"
       /></a>
       <a href="https://www.github.com/pyRN" target="_blank" class="footer-link">
-        <img class="icons" src="./media/Icons/github.svg"/ alt="Github SVG">
+        <img class="icons" src="./media/Icons/github.svg"/ alt="Github SVG"
+        width="30px" height="30px">
       </a>
     </footer>
   </body>
