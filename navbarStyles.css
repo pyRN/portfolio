@@ -119,3 +119,17 @@
     color: var(--primary-color);
   }
 }
+
+@media only screen and (max-width: 750px) {
+  .mobile-menu-link {
+    font-size: 35pt !important;
+    margin: 15px !important;
+    text-align: center !important;
+    width: 100% !important;
+    text-decoration: none !important;
+  }
+
+  .mobile-menu-link :visited {
+    color: var(--primary-color) !important;
+  }
+}
