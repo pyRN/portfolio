@@ -94,6 +94,7 @@ button:hover {
 
 a {
   text-size-adjust: none;
+  color: var(--primary);
 }
 
 a:visited {
