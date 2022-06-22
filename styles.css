@@ -152,7 +152,6 @@ br {
   border-radius: 15px;
   padding: 30px;
   margin: 10px 10%;
-  flex-grow: 1;
 }
 
 .content-card {
@@ -167,7 +166,6 @@ br {
 }
 
 .project {
-  justify-content: space-evenly;
   align-items: center;
   border-radius: 15px;
   background: linear-gradient(to right top, var(--dark-blue), #222);
@@ -177,8 +175,13 @@ br {
   text-align: center;
 }
 
+.project-title {
+  text-align: center;
+}
+
 .project-details {
   text-align: left;
+  flex-grow: 1;
 }
 
 .icons,
