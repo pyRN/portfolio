@@ -182,6 +182,7 @@ br {
 .project-details {
   text-align: left;
   flex-grow: 1;
+  margin-right: 10px;
 }
 
 .icons,
