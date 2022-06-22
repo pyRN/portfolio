@@ -10,6 +10,7 @@
     <link href="navbarStyles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <!-- NavBar -->
     <nav class="flex-row navbar">
       <img class="brand" src="./media/icons/fleurdelis.svg"/ alt="Fleur De Lis
       SVG" width="50px" height="50px">
@@ -57,6 +58,7 @@
         </div>
       </div>
     </nav>
+    <!-- About -->
     <main class="card flex-row flex-wrap mobile-card" id="main-section">
       <img
         src="./media/images/Avatar.avif"
@@ -67,7 +69,7 @@
         height="300px"
       />
 
-      <div class="flex-column w-70 content mobile-content">
+      <div class="flex-column w-70 content-card mobile-content">
         <div class="flex-column">
           <p>Greetings! I'm</p>
           <h2>Jacob Mayeux</h2>
@@ -75,8 +77,8 @@
 
         <p>
           I am a registered nurse turned software developer with experience
-          working in high stress, fast paced environments; where I have been on
-          multiple projects within the energy sector building custom web
+          working in high stress, fast paced environments. I have been on
+          multiple projects within the energy sector, building custom web
           applications for large coorporations.<a
             href="#"
             onClick="fnShowMore()"
@@ -91,9 +93,9 @@
           Technical Specialist," however this role had many hats. I created
           custom web applications using
           <a href="https://sapui5.hana.ondemand.com/" target="_blank"
-            >SAP's UI5 framework</a
+            >SAP's UI5</a
           >
-          that were integrated into their
+          framework that were integrated into their
           <a href="https://www.sap.com/products/fiori.html" target="_blank"
             >Fiori</a
           >
@@ -110,6 +112,7 @@
           on web applications with the project owner, business leads and UX
           designers to increase app efficiency and provide a better UX for the
           end user.
+          <br />
           <br />
           Being a registered nurse in the emergency room for 8 years has given
           me many skills to succeed as a software developer. Working in the ER
@@ -136,17 +139,21 @@
         </div>
       </div>
     </main>
+    <!-- Projects -->
     <div class="card" id="projects-section">
       <h2>Projects</h2>
       <div class="flex-column center">
         <div class="project flex-row flex-wrap mobile-card mobile-content">
           <div class="flex-column w-50 mobile-content">
             <h3 class="project-title">
-              <a href="https://www.doihavethatcard.com" target="_blank"
+              <a
+                href="https://www.doihavethatcard.com"
+                target="_blank"
+                class="project-header"
                 >Do I Have That Card</a
               >
             </h3>
-            <ul class="project-details">
+            <ul class="flex-column project-details w-100">
               <li>
                 A light weight web application, designed to save a collection of
                 Magic: The Gathering cards.
@@ -253,39 +260,57 @@
         </div>
       </div>
     </div>
-    <div class="card flex-row flex-wrap mobile-card" id="contact-section">
-      <div class="flex-column content w-50 mobile-content center">
-        <h2>Contact Me</h2>
-        <ul>
-          <li><p>jacobmayeux@gmail.com</p></li>
-          <li><p>337-852-8647</p></li>
-        </ul>
+
+    <!-- Contact -->
+    <div class="card flex-column">
+      <h2>Contact</h2>
+      <div class="flex-row center mobile-card">
+        <div class="flex-column w-50 content-card mobile-content contact-card">
+          <div class="flex-row center">
+            <a href="mailto:jacobmayeux@gmail.com" target="_blank"
+              ><img
+                src="./media/icons/email.svg"
+                class="contact-icon"
+                alt="email-svg"
+                width="100px"
+                height="100px"
+            /></a>
+            <a href="tel:+13378528647" target="_blank"
+              ><img
+                src="./media/icons/phone.svg"
+                class="contact-icon"
+                alt="phone-svg"
+                width="100px"
+                height="100px"
+            /></a>
+            <a href="https://www.linkedin.com/in/jacobmayeux/" target="_blank"
+              ><img
+                class="contact-icon"
+                src="./media/icons/linkedin.svg"
+                alt="LinkedIn SVG"
+                width="100px"
+                height="100px"
+            /></a>
+            <a href="https://www.github.com/pyRN" target="_blank">
+              <img
+                class="contact-icon"
+                src="./media/icons/github.svg"
+                alt="Github SVG"
+                width="100px"
+                height="100px"
+              />
+            </a>
+          </div>
+        </div>
+        <img
+          src="./media/images/Contact-Me.avif"
+          alt="Contact me image"
+          class="flex-column center w-50 avatar-img rotate-img"
+          width="300px"
+          height="300px"
+        />
       </div>
-      <img
-        src="./media/images/Contact-Me.avif"
-        alt="Contact me image"
-        class="flex-column center w-50 avatar-img rotate-img"
-        width="300px"
-        height="300px"
-      />
     </div>
-    <footer class="flex-row">
-      <a
-        href="https://www.linkedin.com/in/jacobmayeux/"
-        target="_blank"
-        class="footer-link"
-        ><img
-          class="icons"
-          src="./media/icons/linkedin.svg"
-          alt="LinkedIn SVG"
-          width="30px"
-          height="30px"
-      /></a>
-      <a href="https://www.github.com/pyRN" target="_blank" class="footer-link">
-        <img class="icons" src="./media/icons/github.svg"/ alt="Github SVG"
-        width="30px" height="30px">
-      </a>
-    </footer>
   </body>
   <script src="index.js"></script>
 </html>

@@ -1,7 +1,7 @@
 /* Colors */
 :root {
   --primary-color: hsl(214, 72%, 54%);
-  --background-color: #222; /*#3b3d5a;*/
+  --background-color: #222;
   --dark-blue: #2a2b40;
   --light-blue: #3b3d5a;
 }
@@ -128,6 +128,7 @@ br {
   cursor: pointer;
   text-decoration: underline;
 }
+
 #show-less {
   cursor: pointer;
   display: none;
@@ -148,25 +149,22 @@ br {
 
 .card {
   background: var(--light-blue);
-  /* background: linear-gradient(to right top, var(--light-blue), black); */
-  /* background: linear-gradient(
-      17deg,
-      var(--light-blue),
-      rgba(255, 0, 0, 0) 70.71%
-    ),
-    linear-gradient(27deg, var(--dark-blue), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(6deg, black, rgba(0, 0, 255, 0) 70.71%); */
   border-radius: 15px;
   padding: 30px;
   margin: 10px 10%;
   justify-content: space-evenly;
 }
 
-.content {
+.content-card {
   border-radius: 15px;
-  /* background: var(--background-color); */
   background: linear-gradient(to right top, var(--dark-blue), #222);
   padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mobile-card {
+  justify-content: space-around;
 }
 
 .project {
@@ -174,12 +172,12 @@ br {
   align-items: center;
   border-radius: 15px;
   background: linear-gradient(to right top, var(--dark-blue), #222);
-  /* background: linear-gradient(to right top, black, var(--dark-blue)); */
   margin: 5%;
   padding: 20px;
   width: auto;
   text-align: center;
 }
+
 .project-details {
   text-align: left;
 }
@@ -191,11 +189,24 @@ br {
   margin: 0 5px;
 }
 
-.icons:hover {
+.contact-icon {
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 10px;
+}
+
+.icons:hover,
+.contact-icon:hover {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
   transition: ease-in 0.2s;
   filter: drop-shadow(0px 0px 8px var(--primary-color));
+}
+
+.contact-card {
+  height: 250px;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 900px) {
@@ -208,21 +219,13 @@ br {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 10px 0;
   }
 
   .mobile-content {
     width: 90%;
     justify-content: center;
     align-items: center;
-  }
-
-  form {
-    width: 100%;
-  }
-
-  .footer-link {
-    margin: 0;
-    width: 50px;
   }
 }
 
@@ -232,5 +235,16 @@ br {
     font-size: 15pt !important;
     text-decoration: underline !important;
     margin: 0 !important;
+  }
+
+  .project-header {
+    font-size: 20pt !important;
+    margin: 10px 0;
+    color: var(--primary-color);
+    text-decoration: none !important;
+  }
+
+  .contact-icon {
+    width: 50px;
   }
 }
