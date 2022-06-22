@@ -187,7 +187,7 @@ br {
 .icons,
 .tech-stack-icon {
   height: 30px;
-  border-radius: 50%;
+  border-radius: 8px;
   margin: 0 5px;
 }
 
