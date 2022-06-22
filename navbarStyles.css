@@ -38,8 +38,8 @@
 }
 
 .links {
-  justify-content: space-between;
-  width: 50%;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .open .hamburger-bar-1 {
@@ -70,7 +70,11 @@
   padding: 0;
 }
 
-.menu-link {
+.menu-link {  
+  margin-left: 20px;
+}
+
+.menu-link > a{
   text-decoration: none;
   color: var(--primary-color);
   font-size: 20pt;
@@ -107,7 +111,8 @@
     display: none;
   }
 
-  a {
+   .menu-link > a {
+    color: var(--primary-color);
     font-size: 35pt;
     margin: 15px;
     text-align: center;
@@ -115,21 +120,20 @@
     text-decoration: none;
   }
 
-  a:visited {
+   .menu-link > a:visited {
     color: var(--primary-color);
   }
-}
 
-@media only screen and (max-width: 750px) {
   .mobile-menu-link {
     font-size: 35pt !important;
     margin: 15px !important;
     text-align: center !important;
     width: 100% !important;
     text-decoration: none !important;
+    color: var(--primary-color) !important;
   }
 
   .mobile-menu-link :visited {
     color: var(--primary-color) !important;
-  }
 }
+
