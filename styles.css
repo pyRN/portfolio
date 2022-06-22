@@ -25,12 +25,12 @@
   align-items: center;
 }
 
-.w-30 {
-  width: 30%;
+.w-40 {
+  width: 40%;
 }
 
-.w-70 {
-  width: 70%;
+.w-60 {
+  width: 60%;
 }
 .w-50 {
   width: 50%;
@@ -209,16 +209,16 @@ br {
   justify-content: center;
 }
 
-.tech-stack{
+.tech-stack {
   margin-top: 5px;
 }
 
-.tooltip{
+.tooltip {
   position: relative;
   display: inline-block;
 }
 
-.tooltip-text{
+.tooltip-text {
   visibility: hidden;
   width: 80px;
   background-color: var(--dark-blue);
@@ -227,7 +227,7 @@ br {
   border: 1px solid var(--primary-color);
   border-radius: 8px;
   padding: 5px;
-  
+
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
