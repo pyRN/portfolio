@@ -28,8 +28,8 @@
 }
 
 .links {
-  justify-content: flex-end;
-  width: 100%;
+  justify-content: space-between;
+  width: 50%;
 }
 
 .open .hamburger-bar-1 {
@@ -61,11 +61,7 @@
   padding: 0;
 }
 
-.menu-link {  
-  margin-left: 20px;
-}
-
-.menu-link > a{
+.menu-link {
   text-decoration: none;
   color: var(--blue);
   font-size: 20pt;
@@ -131,8 +127,7 @@ footer {
     display: none;
   }
 
-   .menu-link > a {
-    color: var(--primary-color);
+  a {
     font-size: 35pt;
     margin: 15px;
     text-align: center;
@@ -140,13 +135,8 @@ footer {
     text-decoration: none;
   }
 
-<<<<<<< HEAD
-   .menu-link > a:visited {
-    color: var(--primary-color);
-=======
   a:visited {
     color: var(--blue);
->>>>>>> devBranch
   }
 
   .mobile-menu-link {
@@ -156,15 +146,9 @@ footer {
     text-align: center !important;
     width: 100% !important;
     text-decoration: none !important;
-    color: var(--primary-color) !important;
   }
 
   .mobile-menu-link :visited {
-<<<<<<< HEAD
-    color: var(--primary-color) !important;
-=======
     color: var(--blue) !important;
   }
->>>>>>> devBranch
 }
-
