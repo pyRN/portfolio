@@ -10,8 +10,329 @@
     <link href="navbarStyles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <nav class="flex-row navbar center">
+      <img class="brand" src="./media/icons/fleurdelis.svg"/ alt="Fleur De Lis
+      SVG" width="50px" height="50px">
+      <div class="flex-row center links">
+        <a href="#main-section" class="menu-link">About</a>
+        <a
+          href="#"
+          class="menu-link"
+          onclick="window.open('./media/docs/Jacob_Mayeux_Resume_6_2022.pdf')"
+          >Resume</a
+        >
+        <a href="#projects-section" class="menu-link">Projects</a>
+        <a href="#contact-section" class="menu-link">Contact</a>
+      </div>
+
+      <div class="hamburger-menu" id="hamburgerMenu" onclick="fnOpenMenu(this)">
+        <div class="hamburger-bar-1"></div>
+        <div class="hamburger-bar-2"></div>
+        <div class="hamburger-bar-3"></div>
+        <div class="flex-column mobile-menu">
+          <a href="#main-section" class="mobile-menu-link">About</a>
+          <a
+            href="#"
+            onclick="window.open('./media/docs/Jacob_Mayeux_2022_Resume.pdf')"
+            class="mobile-menu-link"
+            >Resume</a
+          >
+          <a href="#projects-section" class="mobile-menu-link">Projects</a>
+          <a href="#contact-section" class="mobile-menu-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="flex-column" id="main-section">
+      <!-- About -->
+      <h2 id="about-section"></h2>
+      <div class="flex-row center section">
+        <div class="flex-column center img-section w-30">
+          <img
+            src="./media/images/Main-Image.jpg"
+            alt="Jacob Mayeux"
+            width="300px"
+            height="300px"
+            class="avatar-img responsive"
+          />
+        </div>
+        <div class="flex-column center content-section w-70">
+          <div class="flex-column center">
+            <p>Greetings! I'm</p>
+            <h2 class="heading-text name-text">Jacob Mayeux</h2>
+          </div>
+
+          <p>
+            I am a registered nurse turned software developer with experience
+            working in high stress, fast paced environments. I have been on
+            multiple projects within the energy sector, building custom web
+            applications for large coorporations.<a
+              href="#"
+              onClick="fnShowMore()"
+              id="show-more"
+              >..more</a
+            >
+          </p>
+          <br />
+          <p id="more-text">
+            From 2018-2020, I worked on different projects in various roles at
+            IBM: GBS North America. My official role was "SAP Technical
+            Specialist;" however, this role had many hats. I created custom web
+            applications using
+            <a href="https://www.sap.com/index.html" target="_blank">SAP</a>'s
+            <a href="https://sapui5.hana.ondemand.com/" target="_blank">UI5</a>
+            framework that were integrated into their
+            <a href="https://www.sap.com/products/fiori.html" target="_blank"
+              >Fiori</a
+            >
+            dashboard. I worked an assistant system administrator to configure
+            new SAP servers for Fiori use and added users with roles onto those
+            servers. I worked as a technical consultant for Fiori, where I
+            troubleshooted system errors, deployed new applications to the
+            dashboard, and worked with backend/security professionals to get
+            applications working properly. I often worked remotely with a global
+            team, but I occasionally traveled to client sites to do on-site
+            work. I consulted on web applications with project owners, business
+            leads, and UX designers to increase app efficiency and provide a
+            better UX for the end user.
+            <br />
+            <br />
+            I made the decision to return to nursing temporarily in July 2020
+            due to the COVID-19 pandemic, where I felt I was of more immediate
+            use to my community. Being a registered nurse in the emergency room
+            for 8 years has given me many skills to succeed as a software
+            developer. I excel in time management, critical thinking in
+            stressful situations, the ability to communicate both with a team
+            and across disciplines, attention to details, and problem solving.<a
+              href="#"
+              onClick="fnShowMore()"
+              id="show-less"
+              >..less</a
+            >
+          </p>
+
+          <div class="flex-row center">
+            <button
+              onclick="window.open('./media/docs/Jacob_Mayeux_Resume_6_2022.pdf')"
+            >
+              Resume
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Projects -->
+      <h2 id="projects-section" class="heading-text">Projects</h2>
+      <div class="flex-column section project-section">
+        <div class="flex-row center flex-wrap projects-row">
+          <div class="flex-column center project-card">
+            <a
+              href="https://www.doihavethatcard.com"
+              target="_blank"
+              class="project-title"
+              >Do I Have That Card</a
+            >
+            <a href="https://www.doihavethatcard.com" target="_blank"
+              ><img
+                src="./media/images/Do-I-Have-That-Card.avif"
+                alt="Do I Have That Card Screenshot"
+                class="project-img responsive"
+                width="300px"
+                height="300px"
+            /></a>
+
+            <div class="flex-row project-content">
+              <ul>
+                <li>
+                  A light weight web application, designed to save a collection
+                  of Magic: The Gathering cards.
+                </li>
+                <li>
+                  <a href="https://firebase.google.com/" target="_blank"
+                    >Google Firebase</a
+                  >
+                  for user authentication and backend API calls
+                </li>
+                <li>
+                  <a
+                    href="https://firebase.google.com/products/firestore"
+                    target="_blank"
+                    >Google Firestore</a
+                  >
+                  - NoSQL Database
+                </li>
+                <li>
+                  <a href="https://scryfall.com/docs/api" target="_blank"
+                    >Scryfall API</a
+                  >
+                  for Magic: The Gathering card information
+                </li>
+              </ul>
+            </div>
+            <div class="flex-row center tech-stack flex-wrap">
+              <a href="https://reactjs.org/" target="_blank" class="tooltip">
+                <img
+                  src="./media/icons/react.svg"
+                  class="tech-stack-icon"
+                  alt="react-svg"
+                  width="30px"
+                  height="30px"
+                />
+                <span class="tooltip-text">React</span>
+              </a>
+              <a href="https://redux.js.org/" target="_blank" class="tooltip">
+                <img
+                  src="./media/icons/redux.svg"
+                  class="tech-stack-icon"
+                  alt="redux-svg"
+                  width="30px"
+                  height="30px"
+                />
+                <span class="tooltip-text">Redux</span>
+              </a>
+              <a
+                href="https://www.javascript.com/"
+                target="_blank"
+                class="tooltip"
+              >
+                <img
+                  src="./media/icons/js.svg"
+                  class="tech-stack-icon"
+                  alt="js-svg"
+                  width="30px"
+                  height="30px"
+                />
+                <span class="tooltip-text">Javascript ES6</span>
+              </a>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"
+                target="_blank"
+                class="tooltip"
+              >
+                <img
+                  src="./media/icons/html5.svg"
+                  class="tech-stack-icon"
+                  alt="html-svg"
+                  width="30px"
+                  height="30px"
+                />
+                <span class="tooltip-text">HTML 5</span>
+              </a>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                target="_blank"
+                class="tooltip"
+              >
+                <img
+                  src="./media/icons/css3.svg"
+                  class="tech-stack-icon"
+                  alt="css-svg"
+                  width="30px"
+                  height="30px"
+                />
+                <span class="tooltip-text">CSS 3</span>
+              </a>
+              <a
+                href="https://firebase.google.com/"
+                target="_blank"
+                class="tooltip"
+              >
+                <img
+                  src="./media/icons/firebase.svg"
+                  class="tech-stack-icon"
+                  alt="firebase-svg"
+                  width="30px"
+                  height="30px"
+                />
+                <span class="tooltip-text">Firebase</span>
+              </a>
+              <a
+                href="https://firebase.google.com/products/firestore"
+                target="_blank"
+                class="tooltip"
+              >
+                <img
+                  src="./media/icons/firestore.svg"
+                  class="tech-stack-icon"
+                  alt="firestore-svg"
+                  width="30px"
+                  height="30px"
+                />
+                <span class="tooltip-text">Firestore</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <h2 id="contact-section" class="heading-text">Contact Me</h2>
+      <div class="flex-row center section">
+        <div class="flex-column center content-sectionw-70">
+          <div class="flex-row center">
+            <a href="mailto:jacobmayeux@gmail.com" target="_blank"
+              ><img
+                src="./media/icons/email.svg"
+                class="contact-icon"
+                alt="email-svg"
+                width="100px"
+                height="100px"
+            /></a>
+            <a href="tel:+13378528647" target="_blank"
+              ><img
+                src="./media/icons/phone.svg"
+                class="contact-icon"
+                alt="phone-svg"
+                width="100px"
+                height="100px"
+            /></a>
+            <a href="https://www.linkedin.com/in/jacobmayeux/" target="_blank"
+              ><img
+                class="contact-icon"
+                src="./media/icons/linkedin.svg"
+                alt="LinkedIn SVG"
+                width="100px"
+                height="100px"
+            /></a>
+            <a href="https://www.github.com/pyRN" target="_blank">
+              <img
+                class="contact-icon"
+                src="./media/icons/github.svg"
+                alt="Github SVG"
+                width="100px"
+                height="100px"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="flex-column center img-section w-30">
+          <img
+            src="./media/images/Contact-Image.jpg"
+            alt="Contact Jacob Mayeux Image"
+            width="300px"
+            height="300px"
+            class="avatar-img responsive"
+          />
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <!-- <footer class="flex-row footer">
+        <a href="#about-section">
+          <img
+            class="icons"
+            src="./media/Icons/uparrow.svg"
+            alt="Up Arrow SVG"
+            width="50px"
+            height="50px"
+          />
+        </a>
+      </footer> -->
+    </main>
+
     <!-- NavBar -->
-    <nav class="flex-row navbar">
+    <!-- <nav class="flex-row navbar">
       <img class="brand" src="./media/icons/fleurdelis.svg"/ alt="Fleur De Lis
       SVG" width="50px" height="50px">
       <div class="flex-row links">
@@ -57,9 +378,9 @@
           <a href="#contact-section" class="mobile-menu-link">Contact</a>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <!-- About -->
-    <main class="card flex-row flex-wrap mobile-card" id="main-section">
+    <!-- <main class="card flex-row flex-wrap mobile-card" id="main-section">
       <img
         src="./media/images/Avatar.avif"
         alt="Avatar"
@@ -132,9 +453,9 @@
           </button>
         </div>
       </div>
-    </main>
+    </main> -->
     <!-- Projects -->
-    <div class="card" id="projects-section">
+    <!-- <div class="card" id="projects-section">
       <h2>Projects</h2>
       <div class="flex-column center">
         <div class="project flex-row flex-wrap mobile-card mobile-content">
@@ -295,10 +616,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Contact -->
-    <div class="card flex-column">
+    <!-- <div class="card flex-column">
       <h2>Contact</h2>
       <div class="flex-row center mobile-card">
         <div class="flex-column w-50 content-card mobile-content contact-card">
@@ -346,7 +667,7 @@
           height="300px"
         />
       </div>
-    </div>
+    </div> -->
   </body>
   <script src="index.js"></script>
 </html>

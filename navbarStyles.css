@@ -1,26 +1,15 @@
 .navbar {
-  background-color: var(--dark-blue);
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  padding: 10px 10% 10px 10%;
-  height: 50px;
+  background-color: var(--background-color);
+  box-shadow: 0 5px 5px rgba(100, 100, 111, 0.2);
+  height: 100px;
+  width: 100%;
   position: sticky;
   top: 0;
   z-index: 1;
 }
 
 .brand {
-  height: 50px;
-  border-radius: 50%;
-  margin: 0 5px;
-}
-
-.hover-icon {
-  height: 15px;
-  border-radius: 50%;
-  visibility: hidden;
-  margin: 0 3px;
+  display: none;
 }
 
 .hamburger-menu {
@@ -30,7 +19,7 @@
 }
 
 .hamburger-menu div {
-  background-color: var(--primary-color);
+  background-color: var(--blue);
   height: 3px;
   margin: 6px 0;
   transition: 0.3s;
@@ -59,6 +48,7 @@
 .open .mobile-menu {
   align-items: center;
   justify-content: flex-start;
+  height: calc(100vh - 100px);
 }
 
 .mobile-menu {
@@ -72,7 +62,7 @@
 
 .menu-link {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--blue);
   font-size: 20pt;
 }
 
@@ -83,24 +73,46 @@
   transition: ease-in 0.1s;
 }
 
+.footer {
+  position: sticky;
+  justify-content: flex-end;
+  margin: 0;
+  padding-right: 3%;
+  align-items: center;
+  bottom: 50px;
+}
+
+.footer > a {
+  width: 30px;
+  height: 30px;
+}
+
 @media only screen and (max-width: 750px) {
-  .hamburger-menu {
-    display: block;
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
   }
 
-  .nav-links {
-    display: none;
+  .brand {
+    display: inline;
+    margin-left: 5%;
+  }
+
+  .hamburger-menu {
+    display: block;
+    margin-right: 5%;
   }
 
   .open .mobile-menu {
     align-items: center;
-    background-color: var(--dark-blue);
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    width: 110vw;
   }
 
   .links {
@@ -116,12 +128,11 @@
   }
 
   a:visited {
-    color: var(--primary-color);
+    color: var(--blue);
   }
-}
 
-@media only screen and (max-width: 750px) {
   .mobile-menu-link {
+    color: var(--blue) !important;
     font-size: 35pt !important;
     margin: 15px !important;
     text-align: center !important;
@@ -130,6 +141,6 @@
   }
 
   .mobile-menu-link :visited {
-    color: var(--primary-color) !important;
+    color: var(--blue) !important;
   }
 }
