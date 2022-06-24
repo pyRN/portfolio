@@ -4,23 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Jacob Mayeux's portfolio website." />
-    <link rel="icon" href="./media/Icons/fleurdelis.svg" />
+    <link rel="icon" href="./media/icons/fleurdelis.svg" />
     <title>Jacob Mayeux</title>
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <link href="navbarStyles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <!-- NavBar -->
     <nav class="flex-row navbar">
-      <img class="brand" src="./media/Icons/fleurdelis.svg"/ alt="Fleur De Lis
+      <img class="brand" src="./media/icons/fleurdelis.svg"/ alt="Fleur De Lis
       SVG" width="50px" height="50px">
       <div class="flex-row links">
         <div class="flex-row menu-link center">
-          <img class="hover-icon" src="./media/Icons/fleurdelis.svg"/ alt="Fleur
+          <img class="hover-icon" src="./media/icons/fleurdelis.svg"/ alt="Fleur
           De Lis SVG" width="15px" height="15px">
           <a href="#main-section" class="menu-link">About</a>
         </div>
         <div class="flex-row menu-link center">
-          <img class="hover-icon" src="./media/Icons/fleurdelis.svg"/ alt="Fleur
+          <img class="hover-icon" src="./media/icons/fleurdelis.svg"/ alt="Fleur
           De Lis SVG" width="15px" height="15px">
           <a
             href="#"
@@ -30,12 +31,12 @@
           >
         </div>
         <div class="flex-row menu-link center">
-          <img class="hover-icon" src="./media/Icons/fleurdelis.svg"/ alt="Fleur
+          <img class="hover-icon" src="./media/icons/fleurdelis.svg"/ alt="Fleur
           De Lis SVG" width="15px" height="15px">
           <a href="#projects-section" class="menu-link">Projects</a>
         </div>
         <div class="flex-row menu-link center">
-          <img class="hover-icon" src="./media/Icons/fleurdelis.svg"/ alt="Fleur
+          <img class="hover-icon" src="./media/icons/fleurdelis.svg"/ alt="Fleur
           De Lis SVG" width="15px" height="15px">
           <a href="#contact-section" class="menu-link">Contact</a>
         </div>
@@ -57,6 +58,7 @@
         </div>
       </div>
     </nav>
+    <!-- About -->
     <main class="card flex-row flex-wrap mobile-card" id="main-section">
       <img
         src="./media/images/Avatar.avif"
@@ -67,19 +69,17 @@
         height="300px"
       />
 
-      <div class="flex-column w-70 content mobile-content">
+      <div class="flex-column w-70 content-card mobile-content">
         <div class="flex-column">
           <p>Greetings! I'm</p>
           <h2>Jacob Mayeux</h2>
         </div>
 
         <p>
-          I have experience working in a high stress, fast paced environments as
-          a nurse in the emergency room; where critical thinking, time
-          management and communication is the key to saving lives and healing
-          patients. I have taken those same skills and incorporated them into
-          software development, where I have made frontend applications for
-          companies within the energy sector.<a
+          I am a registered nurse turned software developer with experience
+          working in high stress, fast paced environments. I have been on
+          multiple projects within the energy sector, building custom web
+          applications for large coorporations.<a
             href="#"
             onClick="fnShowMore()"
             id="show-more"
@@ -88,40 +88,35 @@
         </p>
         <br />
         <p id="more-text">
-          Being a registered nurse for 8 years has given me many skills to
-          succeed as a software developer. Working in the ER for that long has
-          taught me great time management, critical thinking in stressful
-          situations, the ability to communicate with different healthcare
-          professionals, attention to details, getting a good baseline of the
-          problem at hand and understanding the right treatment for the current
-          ailment. When working in a hospital, you are also working with a large
-          team. From the janitor to neurosurgeon, each role has it's own
-          importance and the whole system can collapse if one fails.
-          <br />
-          <br />
-          Prior to the Covid-19 pandemic, I worked on various projects in
-          various roles at IBM: GBS North America. My official role was "SAP
-          Technical Specialist," however this role had many hats. I started off
-          coding custom web application using
-          <a href="https://sapui5.hana.ondemand.com/" target="_blank"
-            >SAP's UI5 framework</a
-          >
-          that were integrated into their
+          From 2018-2020, I worked on different projects in various roles at
+          IBM: GBS North America. My official role was "SAP Technical
+          Specialist;" however, this role had many hats. I created custom web
+          applications using
+          <a href="https://www.sap.com/index.html" target="_blank">SAP</a>'s
+          <a href="https://sapui5.hana.ondemand.com/" target="_blank">UI5</a>
+          framework that were integrated into their
           <a href="https://www.sap.com/products/fiori.html" target="_blank"
             >Fiori</a
           >
-          dashboard. I helped the system administrators configure new
-          <a href="https://www.sap.com/index.html" target="_blank">SAP</a>
-          servers for Fiori use and add users with roles onto those servers. I
-          worked as a technical consultant for Fiori where I troubleshooted
-          system errors, deployed new applications to the dashboard and worked
-          with backend/security professionals to get applications working
-          properly. I worked with a global team, very rarely in the same
-          location as the people I was working with, therefore communication was
-          key. I traveled to multiple client site to do on site work with the
-          team, where I conducted myself in a professional manner. I consulted
-          on web applications with the project owner and business leads to
-          increase app efficiency and provide a better UX.<a
+          dashboard. I worked an assistant system administrator to configure new
+          SAP servers for Fiori use and added users with roles onto those
+          servers. I worked as a technical consultant for Fiori where I
+          troubleshooted system errors, deployed new applications to the
+          dashboard and worked with backend/security professionals to get
+          applications working properly. I often worked remotely with a global
+          team, but I occaissionally traveled to client sites to do on-site work
+          with the team. I consulted on web applications with the project
+          owners, business leads, and UX designers to increase app efficiency
+          and provide a better UX for the end user.
+          <br />
+          <br />
+          I made the decision to return to nursing temporarily in July 2020 due
+          to the COVID-19 pandemic, where I felt I was of more immediate use to
+          my community. Being a registered nurse in the emergency room for 8
+          years has given me many skills to succeed as a software developer. I
+          excel in time management, critical thinking in stressful situations,
+          the ability to communicate both with a team and across disciplines,
+          attention to details, and problem solving.<a
             href="#"
             onClick="fnShowMore()"
             id="show-less"
@@ -138,17 +133,21 @@
         </div>
       </div>
     </main>
+    <!-- Projects -->
     <div class="card" id="projects-section">
       <h2>Projects</h2>
       <div class="flex-column center">
-        <div class="project flex-row flex-wrap mobile-card">
+        <div class="project flex-row flex-wrap mobile-card mobile-content">
           <div class="flex-column w-50 mobile-content">
             <h3 class="project-title">
-              <a href="https://www.doihavethatcard.com" target="_blank"
+              <a
+                href="https://www.doihavethatcard.com"
+                target="_blank"
+                class="project-header"
                 >Do I Have That Card</a
               >
             </h3>
-            <ul class="project-details">
+            <ul class="flex-column project-details w-100">
               <li>
                 A light weight web application, designed to save a collection of
                 Magic: The Gathering cards.
@@ -182,7 +181,7 @@
               >
                 <img
                   class="icons"
-                  src="./media/Icons/github.svg"
+                  src="./media/icons/github.svg"
                   alt="Github
               SVG"
                   width="30px"
@@ -194,93 +193,160 @@
           <div class="flex-column center mobile-content">
             <a href="https://www.doihavethatcard.com" target="_blank"
               ><img
-                src="./media/images/Do_I_Have_That_Card.avif"
+                src="./media/images/Do-I-Have-That-Card.avif"
                 alt="Do I Have That Card Screenshot"
                 class="avatar-img project-img"
                 width="300px"
                 height="300px"
             /></a>
-            <div class="flex-row center">
-              <img
-                src="./media/Icons/react.svg"
-                class="tech-stack-icon"
-                alt="react-svg"
-                width="30px"
-                height="30px"
-              />
-              <img
-                src="./media/Icons/js.svg"
-                class="tech-stack-icon"
-                alt="js-svg"
-                width="30px"
-                height="30px"
-              />
-              <img
-                src="./media/Icons/html5.svg"
-                class="tech-stack-icon"
-                alt="html-svg"
-                width="30px"
-                height="30px"
-              />
-              <img
-                src="./media/Icons/css3.svg"
-                class="tech-stack-icon"
-                alt="css-svg"
-                width="30px"
-                height="30px"
-              />
-              <img
-                src="./media/Icons/firebase.svg"
-                class="tech-stack-icon"
-                alt="firebase-svg"
-                width="30px"
-                height="30px"
-              />
-              <img
-                src="./media/Icons/firestore.svg"
-                class="tech-stack-icon"
-                alt="firestore-svg"
-                width="30px"
-                height="30px"
-              />
+            <div class="flex-row center tech-stack">
+              <a href="https://reactjs.org/" target="_blank" class="tooltip">
+                <img
+                  src="./media/icons/react.svg"
+                  class="tech-stack-icon"
+                  alt="react-svg"
+                  width="30px"
+                  height="30px"
+                />
+                <span class="tooltip-text">React</span>
+              </a>
+              <a href="https://redux.js.org/" target="_blank" class="tooltip">
+                <img
+                  src="./media/icons/redux.svg"
+                  class="tech-stack-icon"
+                  alt="redux-svg"
+                  width="30px"
+                  height="30px"
+                />
+                <span class="tooltip-text">Redux</span>
+              </a>
+              <a
+                href="https://www.javascript.com/"
+                target="_blank"
+                class="tooltip"
+              >
+                <img
+                  src="./media/icons/js.svg"
+                  class="tech-stack-icon"
+                  alt="js-svg"
+                  width="30px"
+                  height="30px"
+                />
+                <span class="tooltip-text">Javascript ES6</span>
+              </a>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"
+                target="_blank"
+                class="tooltip"
+              >
+                <img
+                  src="./media/icons/html5.svg"
+                  class="tech-stack-icon"
+                  alt="html-svg"
+                  width="30px"
+                  height="30px"
+                />
+                <span class="tooltip-text">HTML 5</span>
+              </a>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                target="_blank"
+                class="tooltip"
+              >
+                <img
+                  src="./media/icons/css3.svg"
+                  class="tech-stack-icon"
+                  alt="css-svg"
+                  width="30px"
+                  height="30px"
+                />
+                <span class="tooltip-text">CSS 3</span>
+              </a>
+              <a
+                href="https://firebase.google.com/"
+                target="_blank"
+                class="tooltip"
+              >
+                <img
+                  src="./media/icons/firebase.svg"
+                  class="tech-stack-icon"
+                  alt="firebase-svg"
+                  width="30px"
+                  height="30px"
+                />
+                <span class="tooltip-text">Firebase</span>
+              </a>
+              <a
+                href="https://firebase.google.com/products/firestore"
+                target="_blank"
+                class="tooltip"
+              >
+                <img
+                  src="./media/icons/firestore.svg"
+                  class="tech-stack-icon"
+                  alt="firestore-svg"
+                  width="30px"
+                  height="30px"
+                />
+                <span class="tooltip-text">Firestore</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card flex-row flex-wrap mobile-card" id="contact-section">
-      <div class="flex-column content w-50 mobile-content center">
-        <h2>Contact Me</h2>
-        <ul>
-          <li><p>jacobmayeux@gmail.com</p></li>
-          <li><p>337-852-8647</p></li>
-        </ul>
+
+    <!-- Contact -->
+    <div class="card flex-column">
+      <h2>Contact</h2>
+      <div class="flex-row center mobile-card">
+        <div class="flex-column w-50 content-card mobile-content contact-card">
+          <div class="flex-row center">
+            <a href="mailto:jacobmayeux@gmail.com" target="_blank"
+              ><img
+                src="./media/icons/email.svg"
+                class="contact-icon"
+                alt="email-svg"
+                width="100px"
+                height="100px"
+            /></a>
+            <a href="tel:+13378528647" target="_blank"
+              ><img
+                src="./media/icons/phone.svg"
+                class="contact-icon"
+                alt="phone-svg"
+                width="100px"
+                height="100px"
+            /></a>
+            <a href="https://www.linkedin.com/in/jacobmayeux/" target="_blank"
+              ><img
+                class="contact-icon"
+                src="./media/icons/linkedin.svg"
+                alt="LinkedIn SVG"
+                width="100px"
+                height="100px"
+            /></a>
+            <a href="https://www.github.com/pyRN" target="_blank">
+              <img
+                class="contact-icon"
+                src="./media/icons/github.svg"
+                alt="Github SVG"
+                width="100px"
+                height="100px"
+              />
+            </a>
+          </div>
+        </div>
+        <img
+          src="./media/images/Contact-Me.avif"
+          alt="Contact me image"
+          class="flex-column center w-50 avatar-img rotate-img"
+          width="300px"
+          height="300px"
+        />
       </div>
-      <img
-        src="./media/images/Contact-Me.avif"
-        alt="Contact me image"
-        class="flex-column center w-50 avatar-img rotate-img"
-        width="300px"
-        height="300px"
-      />
     </div>
-    <footer class="flex-row">
-      <a
-        href="https://www.linkedin.com/in/jacobmayeux/"
-        target="_blank"
-        class="footer-link"
-        ><img
-          class="icons"
-          src="./media/Icons/linkedin.svg"
-          alt="LinkedIn SVG"
-          width="30px"
-          height="30px"
-      /></a>
-      <a href="https://www.github.com/pyRN" target="_blank" class="footer-link">
-        <img class="icons" src="./media/Icons/github.svg"/ alt="Github SVG"
-        width="30px" height="30px">
-      </a>
-    </footer>
   </body>
   <script src="index.js"></script>
 </html>
