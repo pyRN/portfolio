@@ -10,45 +10,31 @@
     <link href="navbarStyles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <!-- NavBar -->
-    <nav class="flex-row navbar">
+    <nav class="flex-row navbar center" id="navbar">
       <img class="brand" src="./media/icons/fleurdelis.svg"/ alt="Fleur De Lis
       SVG" width="50px" height="50px">
-      <div class="flex-row links">
-        <div class="flex-row menu-link center">
-          <img class="hover-icon" src="./media/icons/fleurdelis.svg"/ alt="Fleur
-          De Lis SVG" width="15px" height="15px">
-          <a href="#main-section">About</a>
-        </div>
-        <div class="flex-row menu-link center">
-          <img class="hover-icon" src="./media/icons/fleurdelis.svg"/ alt="Fleur
-          De Lis SVG" width="15px" height="15px">
-          <a
-            href="#"
-            onclick="window.open('./media/docs/Jacob_Mayeux_2022_Resume.pdf')"
-            >Resume</a
-          >
-        </div>
-        <div class="flex-row menu-link center">
-          <img class="hover-icon" src="./media/icons/fleurdelis.svg"/ alt="Fleur
-          De Lis SVG" width="15px" height="15px">
-          <a href="#projects-section">Projects</a>
-        </div>
-        <div class="flex-row menu-link center">
-          <img class="hover-icon" src="./media/icons/fleurdelis.svg"/ alt="Fleur
-          De Lis SVG" width="15px" height="15px">
-          <a href="#contact-section">Contact</a>
-        </div>
+      <div class="flex-row center links">
+        <div><a href="#main-section" class="menu-link">About</a></div>
+
+        <a
+          href="#"
+          class="menu-link"
+          onclick="window.open('./media/docs/Jacob_Mayeux_Resume_6_2022.pdf')"
+          >Resume</a
+        >
+        <a href="#projects-section" class="menu-link">Projects</a>
+        <a href="#contact-section" class="menu-link">Contact</a>
       </div>
+
       <div class="hamburger-menu" id="hamburgerMenu" onclick="fnOpenMenu(this)">
         <div class="hamburger-bar-1"></div>
         <div class="hamburger-bar-2"></div>
         <div class="hamburger-bar-3"></div>
-        <div class="flex-column mobile-menu">
+        <div class="flex-column mobile-menu" id="mobile-menu">
           <a href="#main-section" class="mobile-menu-link">About</a>
           <a
             href="#"
-            onclick="window.open('./media/docs/Jacob_Mayeux_2022_Resume.pdf')"
+            onclick="window.open('./media/docs/Jacob_Mayeux_Resume_6_2022.pdf')"
             class="mobile-menu-link"
             >Resume</a
           >
@@ -57,22 +43,24 @@
         </div>
       </div>
     </nav>
-    <!-- About -->
-    <main class="card" id="main-section">
-      <h2>About</h2>
-      <div class="flex-row flex-wrap center mobile-card">
-        <img
-          src="./media/images/Avatar.avif"
-          alt="Avatar"
-          id="avatar-img"
-          class="flex-column center w-40 avatar-img rotate-img"
-          width="300px"
-          height="300px"
-        />
-        <div class="flex-column w-60 content-card mobile-content">
-          <div class="flex-column">
+
+    <main class="flex-column" id="main-section">
+      <!-- About -->
+      <h2 id="about-section"></h2>
+      <div class="flex-row center section">
+        <div class="flex-column center img-section w-30">
+          <img
+            src="./media/images/Main-Image.jpg"
+            alt="Jacob Mayeux"
+            width="300px"
+            height="300px"
+            class="avatar-img responsive"
+          />
+        </div>
+        <div class="flex-column center content-section w-70">
+          <div class="flex-column center">
             <p>Greetings! I'm</p>
-            <h2>Jacob Mayeux</h2>
+            <h2 class="heading-text name-text">Jacob Mayeux</h2>
           </div>
 
           <p>
@@ -104,10 +92,10 @@
             troubleshooted system errors, deployed new applications to the
             dashboard, and worked with backend/security professionals to get
             applications working properly. I often worked remotely with a global
-            team, but I occaissionally traveled to client sites to do on-site
-            work. I consulted on web applications with the project owners,
-            business leads, and UX designers to increase app efficiency and
-            provide a better UX for the end user.
+            team, but I occasionally traveled to client sites to do on-site
+            work. I consulted on web applications with project owners, business
+            leads, and UX designers to increase app efficiency and provide a
+            better UX for the end user.
             <br />
             <br />
             I made the decision to return to nursing temporarily in July 2020
@@ -126,84 +114,62 @@
 
           <div class="flex-row center">
             <button
-              onclick="window.open('./media/docs/Jacob_Mayeux_2022_Resume.pdf')"
+              onclick="window.open('./media/docs/Jacob_Mayeux_Resume_6_2022.pdf')"
             >
               Resume
             </button>
           </div>
         </div>
       </div>
-    </main>
-    <!-- Projects -->
-    <div class="card" id="projects-section">
-      <h2>Projects</h2>
-      <div class="flex-column center">
-        <!-- Do I Have That Card -->
-        <div
-          class="project flex-row flex-wrap mobile-card mobile-content center"
-        >
-          <div class="flex-column w-50 mobile-content project-details">
-            <h3 class="project-title">
-              <a
-                href="https://www.doihavethatcard.com"
-                target="_blank"
-                class="project-header"
-                >Do I Have That Card</a
-              >
-            </h3>
-            <ul class="flex-column">
-              <li>
-                A light weight web application, designed to save a collection of
-                Magic: The Gathering&copy; cards.
-              </li>
-              <li>
-                <a href="https://firebase.google.com/" target="_blank"
-                  >Google Firebase</a
-                >
-                for user authentication and backend API calls
-              </li>
-              <li>
-                <a
-                  href="https://firebase.google.com/products/firestore"
-                  target="_blank"
-                  >Google Firestore</a
-                >
-                - NoSQL Database
-              </li>
-              <li>
-                <a href="https://scryfall.com/docs/api" target="_blank"
-                  >Scryfall API</a
-                >
-                for Magic: The Gathering card information
-              </li>
-            </ul>
-            <div class="flex-row center">
-              <a
-                href="https://github.com/pyRN/that-card-firebase"
-                target="_blank"
-                class="footer-link"
-              >
-                <img
-                  class="icons"
-                  src="./media/icons/github.svg"
-                  alt="Github
-              SVG"
-                  width="30px"
-                  height="30px"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="flex-column center mobile-content">
+      <!-- Projects -->
+      <h2 id="projects-section" class="heading-text">Projects</h2>
+      <div class="flex-column section project-section">
+        <div class="flex-row center flex-wrap projects-row">
+          <div class="flex-column center project-card">
+            <a
+              href="https://www.doihavethatcard.com"
+              target="_blank"
+              class="project-title"
+              >Do I Have That Card</a
+            >
             <a href="https://www.doihavethatcard.com" target="_blank"
               ><img
                 src="./media/images/Do-I-Have-That-Card.avif"
                 alt="Do I Have That Card Screenshot"
-                class="avatar-img project-img"
+                class="project-img responsive"
                 width="300px"
                 height="300px"
             /></a>
-            <div class="flex-row center tech-stack">
+
+            <div class="flex-row project-content">
+              <ul>
+                <li>
+                  A light weight web application, designed to save a collection
+                  of Magic: The Gathering cards.
+                </li>
+                <li>
+                  <a href="https://firebase.google.com/" target="_blank"
+                    >Google Firebase</a
+                  >
+                  for user authentication and backend API calls
+                </li>
+                <li>
+                  <a
+                    href="https://firebase.google.com/products/firestore"
+                    target="_blank"
+                    >Google Firestore</a
+                  >
+                  - NoSQL Database
+                </li>
+                <li>
+                  <a href="https://scryfall.com/docs/api" target="_blank"
+                    >Scryfall API</a
+                  >
+                  for Magic: The Gathering card information
+                </li>
+              </ul>
+            </div>
+            <div class="flex-row center tech-stack flex-wrap">
               <a href="https://reactjs.org/" target="_blank" class="tooltip">
                 <img
                   src="./media/icons/react.svg"
@@ -298,13 +264,11 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Contact -->
-    <div class="card flex-column" id="contact-section">
-      <h2>Contact</h2>
-      <div class="flex-row flex-wrap center mobile-card">
-        <div class="flex-column w-60 content-card mobile-content contact-card">
+      <!-- Contact -->
+      <h2 id="contact-section" class="heading-text">Contact Me</h2>
+      <div class="flex-row center section">
+        <div class="flex-column center content-sectionw-70">
           <div class="flex-row center">
             <a href="mailto:jacobmayeux@gmail.com" target="_blank"
               ><img
@@ -341,15 +305,30 @@
             </a>
           </div>
         </div>
-        <img
-          src="./media/images/Contact-Me.avif"
-          alt="Contact me image"
-          class="flex-column center w-40 avatar-img rotate-img"
-          width="300px"
-          height="300px"
-        />
+
+        <div class="flex-column center img-section w-30">
+          <img
+            src="./media/images/Contact-Image.jpg"
+            alt="Contact Jacob Mayeux Image"
+            width="300px"
+            height="300px"
+            class="avatar-img responsive"
+          />
+        </div>
       </div>
-    </div>
+      <!-- Footer -->
+      <footer class="flex-row" id="footer">
+        <a href="#about-section">
+          <img
+            class="icons"
+            src="./media/icons/uparrow.svg"
+            alt="Up Arrow SVG"
+            width="50px"
+            height="50px"
+          />
+        </a>
+      </footer>
+    </main>
   </body>
   <script src="index.js"></script>
 </html>
