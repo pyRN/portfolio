@@ -10,11 +10,12 @@
     <link href="navbarStyles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <nav class="flex-row navbar center">
+    <nav class="flex-row navbar center" id="navbar">
       <img class="brand" src="./media/icons/fleurdelis.svg"/ alt="Fleur De Lis
       SVG" width="50px" height="50px">
       <div class="flex-row center links">
-        <a href="#main-section" class="menu-link">About</a>
+        <div><a href="#main-section" class="menu-link">About</a></div>
+
         <a
           href="#"
           class="menu-link"
@@ -29,11 +30,11 @@
         <div class="hamburger-bar-1"></div>
         <div class="hamburger-bar-2"></div>
         <div class="hamburger-bar-3"></div>
-        <div class="flex-column mobile-menu">
+        <div class="flex-column mobile-menu" id="mobile-menu">
           <a href="#main-section" class="mobile-menu-link">About</a>
           <a
             href="#"
-            onclick="window.open('./media/docs/Jacob_Mayeux_2022_Resume.pdf')"
+            onclick="window.open('./media/docs/Jacob_Mayeux_Resume_6_2022.pdf')"
             class="mobile-menu-link"
             >Resume</a
           >
@@ -316,20 +317,19 @@
           />
         </div>
       </div>
-
-      <!-- Footer -->
-      <!-- <footer class="flex-row footer">
+      <footer class="flex-row" id="footer">
         <a href="#about-section">
           <img
             class="icons"
-            src="./media/Icons/uparrow.svg"
+            src="./media/icons/uparrow.svg"
             alt="Up Arrow SVG"
             width="50px"
             height="50px"
           />
         </a>
-      </footer> -->
+      </footer>
     </main>
+    <!-- Footer -->
 
     <!-- NavBar -->
     <!-- <nav class="flex-row navbar">
