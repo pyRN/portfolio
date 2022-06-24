@@ -5,7 +5,8 @@
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
+  transition: visibility 0.3s, opacity 0.3s linear;
 }
 
 .brand {
@@ -48,7 +49,9 @@
 .open .mobile-menu {
   align-items: center;
   justify-content: flex-start;
-  height: calc(100vh - 100px);
+  top: 90px;
+  /* height: 100vh;
+  margin-top: 20px; */
 }
 
 .mobile-menu {
@@ -64,27 +67,38 @@
   text-decoration: none;
   color: var(--blue);
   font-size: 20pt;
+  overflow: hidden;
 }
 
-.menu-link:hover .hover-icon {
-  visibility: visible;
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  transition: ease-in 0.1s;
+.menu-link:hover {
+  color: #457DFB;
+  text-decoration: none;
 }
 
-.footer {
-  position: sticky;
+.menu-link:hover::after {
+  border-color: var(--blue);
+  /* right: 0; */
+}
+
+.menu-link::after {
+  border-radius: 1em;
+  border-top: .1em solid #2F56B0;
+  content: "";
+  position: absolute;
+    right: 100%;
+    bottom: .14em;
+    left: 0;
+  transition: right .4s cubic-bezier(0,.5,0,1),
+              border-color .4s ease-out;
+}
+
+footer{
+  visibility: hidden;
   justify-content: flex-end;
-  margin: 0;
-  padding-right: 3%;
-  align-items: center;
-  bottom: 50px;
-}
-
-.footer > a {
-  width: 30px;
-  height: 30px;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  transition: visibility 0.3s, opacity 0.3s linear;
 }
 
 @media only screen and (max-width: 750px) {
@@ -112,7 +126,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 110vw;
+    height: 100vh;
+    width: 100vw;
   }
 
   .links {
